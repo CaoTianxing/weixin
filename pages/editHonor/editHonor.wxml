@@ -1,0 +1,49 @@
+<ctx-navbar back home text="{{pageTitle}}"></ctx-navbar>
+<view class='pageBox' style="{{'top:' + navigationBarHeight}}">
+  <!-- 列表 start -->
+  <view class='itemLi'>
+    <view class='itemLi-l fl'>荣誉名称</view>
+    <view class='itemLi-r'>
+      <input placeholder='请输入奖项名称' bindinput='getHonorName' value="{{honorName}}" placeholder-class='fc-b3'></input>
+    </view>
+  </view>
+  <view class='itemLi'>
+    <view class='itemLi-l fl'>颁奖机构</view>
+    <view class='itemLi-r'>
+      <input placeholder='请输入颁奖机构' bindinput='getMechanismName' value="{{mechanismName}}" placeholder-class='fc-b3'></input>
+    </view>
+  </view>
+  <view class='itemLi'>
+    <picker mode="date" value="{{endDate}}" bindchange="bindDateChangeEnd">
+      <view class='itemLi-l fl'>获得时间</view>
+      <!-- <view class='itemLi-r'> -->
+        <view class='fs32 fc-59 itemLi-r'>
+          <view class="fr fs28 {{endDate =='' ? 'fc-b3': 'fc-1'}}">
+            {{endDate == '' ? '请选择获得时间' : endDate}}
+          </view>
+        </view>
+      <!-- </view> -->
+    </picker>
+  </view>
+  <view class='editInfo'>
+    <view class='editInfo-in'>荣誉介绍</view>
+    <view class='editInfoTextarea'>
+      <textarea bindinput="bindTextAreaBlur" value="{{honorInfo}}" placeholder="请介绍一下你的荣誉，让大家更了解你" />
+    </view>
+  </view>
+  <view class="editInfo upImg">
+    <view class='editInfo-in'>荣誉证书</view>
+    <view class='ul clearfix'>
+      <view class='li' wx:for='{{imglist}}' data-index='{{index}}' bindtap="multipleTap" bindtouchstart="touchStart" bindtouchend="touchEnd" data-imgurl='{{item}}' wx:key="index">
+        <!-- <cover-image class='shutdown' bindtap='delImg' data-index='{{index}}' src='../../static/images/upimg/shutdown.png'></cover-image> -->
+        <image class='img' src='{{item}}'></image>
+      </view>
+      <view class='li addImg' bindtap='addImg'>
+        <image class='img' src='../../static/images/upimg/addimg.png'></image>
+      </view>
+    </view>
+  </view>
+  <!-- 列表 end -->
+  <!-- 页脚 -->
+  <ctx-nextStep bindtap='save'>保存</ctx-nextStep>
+</view>

@@ -1,0 +1,97 @@
+.li {
+  padding: 0 30rpx;
+  overflow: hidden;
+  display: flex;
+  height: 98rpx;
+  background-color: #fff;
+  align-items: center;
+  /*垂直*/
+  justify-content: center;
+  /*水平*/
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.li-title{
+  color: #595959;
+  flex: 1;
+  text-align: left;
+  font-size: 32rpx;
+}
+
+.radio-group {
+  flex: 4;
+  color: #CCCCCC;
+  display: flex;
+ 
+}
+.radio{
+  flex: 1;
+  line-height: 98rpx;
+
+}
+.radioName{
+  font-size: 26rpx;
+  margin-top: 3rpx;
+}
+
+radio {
+  transform:scale(0.6);
+  border: none;
+}
+
+.items{
+  background-color: #fff;
+  padding: 0 30rpx;
+  line-height: 98rpx;
+  height: 98rpx;
+  border-bottom: 1px solid #e6e6e6;
+  display: flex;
+}
+.items-l{
+  flex: 1;
+  font-size: 32rpx;
+  color: #595959
+}
+.items-r{
+  
+  flex: 1;
+  text-align: right
+}
+.items-r input{
+  height: 100%;
+  font-size: 28rpx;
+}
+
+.cardZF{
+  overflow: hidden;
+  padding: 0 30rpx;
+  background-color: #fff;
+
+}
+
+.cardZF-t{
+  color: #595959;
+  font-size: 32rpx;
+  line-height: 98rpx;
+  height: 98rpx;
+}
+
+.cardZF-b > view > image{
+  height: 150rpx;
+  width: 150rpx;
+  border-radius: 5px;
+}
+
+.cardZF-b{
+  overflow: hidden;
+  padding-bottom: 30rpx;
+}
+.cardZF-b-l,.cardZF-b-r{
+  display: flex;
+  font-size: 28rpx;
+  color: #B3B3B3;
+  flex-direction: column
+}
+.cardZF-b-r{
+  margin-left: 30rpx;
+}

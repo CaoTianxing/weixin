@@ -1,0 +1,126 @@
+/* 诚意金 start */
+.pageBox{
+  position: absolute;
+  width: 100%;
+}
+.sincerity{
+  padding: 30rpx;
+  background-color: #fff;
+}
+.title{
+  border-left: 3px solid #6C4AFD;
+  padding-left: 16rpx;
+  font-size: 30rpx;
+  color: #404040;
+  font-weight: bold
+}
+
+.title image{
+  width: 28rpx;
+  height: 28rpx;
+  margin-top: 8rpx;
+}
+
+.sincerityUl{
+  background-color: #fff;
+  overflow: hidden;
+  padding: 0 30rpx;
+}
+.sincerityLi{
+  width: 150rpx;
+  height: 60rpx;
+  float: left;
+  line-height: 60rpx;
+  background:rgba(243,243,243,1);
+  border-radius: 10rpx;
+  color: #585858;
+  font-size: 28rpx;
+  text-align: center;
+  margin: 10rpx;
+  position: relative
+}
+
+.sincerityLi image{
+  position: absolute;
+  height: 30rpx;
+  width: 30rpx;
+  top: 0;
+  right: 0;
+}
+
+/* 高亮样式 */
+.active{
+  border: 1px solid #6747CE;
+  color: #6747CE!important;
+}
+.p1{
+  background-color: #fff;
+  padding: 46rpx 0;
+  color: #4D4D4D;
+  font-size: 26rpx;
+  text-align: center;
+}
+
+/* 诚意金 end */
+
+
+/* 支付方式 start */
+.pay{
+  background-color: #fff;
+  padding: 0 30rpx;
+}
+.pay-li-title{
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 1px dashed #404040;
+}
+.pay-li-title > text{
+  border-left: 6rpx solid #6C4AFD;
+  padding-left: 16rpx;
+}
+
+.pay-li-l{
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+  margin-top: 30rpx;
+}
+.pay-li-l image{
+  width: 100%;
+  height: 100%;
+}
+.pay-li-r{
+  margin-left: 102rpx;
+  border-bottom: 1px solid #EDEDED;
+  height: 130rpx;
+  line-height: 130rpx;
+
+}
+
+.check{
+  height: 34rpx;
+  width: 34rpx;
+  margin-top: 50rpx;
+  border-radius: 50%;
+  border: 1px solid #B3B3B3;
+  position: relative;
+}
+.check image{
+  position: absolute;
+   height: 30rpx;
+  width: 30rpx;
+  vertical-align: top;
+  left: 0;
+  top: 0;
+}
+/* 支付方式 end */
+
+.p2{
+  text-align: center;
+  font-size: 26rpx;
+  color: #262626;
+  margin-top: 40rpx;
+}
+
+
+

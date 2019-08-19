@@ -1,0 +1,84 @@
+page {
+  background-color: #fff;
+}
+
+
+
+.title {
+  margin-bottom: 50rpx;
+  margin-top: 40rpx;
+  color: #006cff;
+  font-size: 34rpx;
+  text-align: center;
+  font-weight: bold;
+}
+
+.bt1 {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.li {
+  padding: 0 30rpx;
+  overflow: hidden;
+  height: 150rpx;
+  line-height: 150rpx;
+  background-color: #fff;
+  position: relative;
+}
+
+.li-r {
+  font-size: 32rpx;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 30rpx;
+}
+
+.a {
+  overflow: hidden;
+}
+
+.li-r-subtitle {
+  height: 150rpx;
+  line-height: 150rpx;
+  float: left;
+  color: #3775f5;
+}
+
+van-icon {
+  float: right;
+  color: #3775f5;
+  margin-top:4rpx
+}
+
+.Alert{
+  padding: 30rpx 20rpx;
+}
+.Alert-in{
+  display: flex;
+  padding: 20rpx 0;
+  position: relative;
+}
+.Alert-in > text{
+  height: 80rpx;
+  line-height: 80rpx;
+  width: 120rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #595959
+}
+
+.Alert-in > input{
+  height: 80rpx;
+  flex: 1;
+  font-size: 28rpx;
+  color: #B3B3B3;
+  line-height: 80rpx;
+}
+.setTime{
+  line-height: 80rpx;
+  font-size: 28rpx;
+  color: #3775F5;
+}
+
+

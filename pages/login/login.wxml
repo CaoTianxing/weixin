@@ -1,0 +1,14 @@
+<ctx-navbar back home text="{{docTitle}}"></ctx-navbar>
+<view class='container' style="{{'top:' + navigationBarHeight}}">
+
+  <button size='160rpx' class='phone' open-type='getPhoneNumber' bindgetphonenumber="getPhoneNumber">微信授权登录</button>
+
+  <view class='alert' wx:if="{{alert}}">
+    <view class='title'>微信授权</view>
+    <view class='alert-m'>获取你的公开信息（ 昵称、头像等 ）</view>
+    <view class='alert-b'>
+      <button open-type='getUserInfo' bindgetuserinfo='getUser'>允许</button>
+      <button open-type='getUserInfo' bindgetuserinfo='getUser'>拒绝</button>
+    </view>
+  </view>
+</view>

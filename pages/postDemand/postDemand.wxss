@@ -1,0 +1,73 @@
+.pageBox{
+  position: absolute;
+  padding-bottom: 100rpx;
+  width: 100%;
+}
+.title {
+  background-color: #fff;
+  overflow: hidden;
+  height: 140rpx;
+  line-height: 140rpx;
+}
+
+.title image {
+  height: 68rpx;
+  width: 68rpx;
+  float: left;
+  margin-top: 38rpx;
+  margin-left: 40rpx;
+}
+.bt1{
+  border-bottom: 1px solid #F2F2F2;
+}
+.li{
+  padding: 0 30rpx;
+  height: 150rpx;
+  line-height: 150rpx;
+  overflow: hidden;
+  background-color: #fff;
+  position: relative
+}
+.li-l{
+  font-size: 32rpx;
+  color: #595959;
+  display: flex;
+  align-items: center;/*垂直*/
+  
+  
+}
+.li-r{
+  font-size: 32rpx;
+  overflow: hidden;
+}
+.a{
+  overflow: hidden;
+  display: flex;
+align-items: center;/*垂直*/
+  justify-content:space-between;
+}
+.li-r-subtitle{
+  
+  height: 100%;
+  right: 35rpx;
+  color: #3775F5;
+  width: 600rpx;
+}
+
+van-icon{
+  vertical-align: middle;
+  color: #3775F5;
+}
+
+.textLength{
+  width: 90rpx;
+  margin-left: 10rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 20rpx;
+  text-align: center;
+  color: #F2F2F2;
+  float: left;
+  background-color: #1690ED;
+  border-radius: 16rpx;
+}

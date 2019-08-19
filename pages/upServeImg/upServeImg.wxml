@@ -1,0 +1,19 @@
+<ctx-navbar back home text="上传图片"></ctx-navbar>
+<view class='pageBox' style="{{'top:' + navigationBarHeight}}">
+  <view class="title">
+    <view>上传您的照片</view>
+    <view class="title-btm">或相关服务的照片</view>
+  </view>
+  <view class='ul clearfix'>
+    <view class='li' wx:for='{{imglist}}' data-index='{{index}}' bindtap="multipleTap" bindtouchstart="touchStart" bindtouchend="touchEnd" data-imgurl='{{item}}' wx:key="index">
+      <!-- <cover-image class='shutdown' bindtap='delImg' data-index='{{index}}' src='../../static/images/upimg/shutdown.png'></cover-image> -->
+      <image class='img' src='{{item}}'></image>
+    </view>
+    <view class='li addImg' bindtap='addImg'>
+      <image class='img' src='../../static/images/upimg/addimg.png'></image>
+    </view>
+  </view>
+
+  <!-- 页脚 -->
+  <ctx-nextStep bindtap='save'>保存</ctx-nextStep>
+</view>

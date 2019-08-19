@@ -1,0 +1,80 @@
+<ctx-navbar back home text="教育经历"></ctx-navbar>
+<view class='pageBox' style="{{'top:' + navigationBarHeight}}">
+  <!-- 列表 start -->
+  <block wx:for="{{school}}" wx:key="{{index}}">
+    <view class='itemLi bc'>
+      <view class='itemLi-t'>
+        <view class='itemLi-t-l'>{{item.schoolName}}</view>
+        <view class='itemLi-t-r'>
+          <image data-id='{{item.id}}' bindtap='editValue' src='../../static/images/aboutTa/editor.png'></image>
+          <image data-id='{{item.id}}' bindtap='remValue' src='../../static/images/upimg/shutdown.png'></image>
+        </view>
+      </view>
+      <view class='itemLi-b'>
+        <view class='itemLi-b-l fl'>{{item.degree == 1 ? '专科' : item.degree == 2 ? '本科' : item.degree == 3 ? '硕士' :item.degree == 4 ? '博士': '其他'}}
+          <text class=''>{{item.major}}</text>
+        </view>
+        <view class='itemLi-b-r fr'>{{item.beginTime}}至{{item.endTime}}</view>
+      </view>
+    </view>
+  </block>
+  <view class='addBox'>
+    <view bindtap='showMask'>
+      <image class='add' src='../../static/images/addlan.png'></image>
+      添加经历
+    </view>
+  </view>
+  <!-- 列表 end -->
+  <!-- 弹出层 start -->
+  <van-popup show="{{ show }}" z-index='10000' bind:close="onClose">
+    <view class='alert'>
+      <view class='alert-t'>
+        <view class='itemLi'>
+          <!-- <view class='itemLi-t'>
+            <view class='itemLi-t-l'>学校名称</view>
+          </view> -->
+          <view class='itemLi-b'>
+            <input placeholder='请输学校名称' bindinput='getKey' value="{{schoolName}}" placeholder-class='fc-b3'></input>
+          </view>
+        </view>
+        <view class='itemLi mt10'>
+          <view class='itemLi-b'>
+            <input placeholder='请输入专业' value="{{profession}}" bindinput='getValue' placeholder-class='fc-b3'></input>
+          </view>
+        </view>
+        <view class='itemLi mt10'>
+          <picker bindchange="getEducationName" value="{{educationNameList}}" range="{{educationNameList}}" range-key="name">
+            <view class='itemLi-b'>
+              <view class='education-l fl'>学历</view>
+              <view class='education-r fr'>{{educationName.name}}</view>
+            </view>
+          </picker>
+        </view>
+        <view class='itemLi mt10'>
+          <picker mode="date" value="{{educationStartDate}}" bindchange="educationStart">
+            <view class='itemLi-b'>
+              <view class='education-l fl'>开始时间</view>
+              <view class='education-r fr'>{{educationStartDate}}</view>
+            </view>
+          </picker>
+        </view>
+        <view class='itemLi mt10'>
+          <picker mode="date" value="{{educationEndDate}}" bindchange="educationEnd">
+            <view class='itemLi-b'>
+              <view class='education-l fl'>结束时间</view>
+              <view class='education-r fr'>{{educationEndDate}}</view>
+            </view>
+          </picker>
+        </view>
+      </view>
+      <view class="alert-b">
+        <view class='alert-b-t' bindtap='onClose'>取消</view>
+        <view wx:if='{{!upbtn}}' class='alert-b-b' bindtap="addvalue">保存</view>
+        <view wx:if='{{upbtn}}' class='alert-b-b' bindtap="upvalue">更新</view>
+      </view>
+    </view>
+  </van-popup>
+  <!-- 弹出层 end -->
+  <!-- 页脚 -->
+  <ctx-nextStep wx:if="{{btn}}" bindtap='save'>保存</ctx-nextStep>
+</view>

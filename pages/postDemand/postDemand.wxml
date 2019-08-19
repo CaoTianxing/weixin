@@ -1,0 +1,62 @@
+<ctx-navbar back home text="发布需求"></ctx-navbar>
+<view class='pageBox' style="{{'top:' + navigationBarHeight}}">
+  <view class='title bt1'>
+    <image src='{{initData.img}}'></image>
+    <text class='fl fs32 fc-5 ml30'>{{initData.title}}</text>
+    <text class='fr fs24 fc-bf mr30'>{{createTime}}  创建</text>
+  </view>
+  <view class='ul'>
+    <view class='li bt1'>
+      <navigator class='a' url='/pages/sincerity/sincerity' hover-class='none'>
+        <view class='li-l fl'>诚意金</view>
+        <view class='li-r'>
+          <text class='fs28 li-r-subtitle'>每天可免费发布一次需求</text>
+          <van-icon name="arrow" />
+        </view>
+      </navigator>
+    </view>
+    <view class='li bt1'>
+      <navigator class='a' url="/pages/serviceHours/serviceHours" hover-class='none'>
+        <view class='li-l fl'>服务时间(必填)</view>
+        <view class='li-r'>
+          <text class='fs28 li-r-subtitle'>请选择服务时间</text>
+          <van-icon name="arrow" />
+        </view>
+      </navigator>
+    </view>
+    <view class='li bt1'>
+      <picker bindchange="serviceMethodFun" value="{{serviceMethod}}" range="{{serviceMethod}}" range-key="name">
+        <view url='' class='a' hover-class='none'>
+          <view class='li-l fl'>服务方式(必填)</view>
+          <view class='li-r'>
+            <text class='fs28 li-r-subtitle'>{{manner.name}}</text>
+          </view>
+        </view>
+      </picker>
+    </view>
+    <view class='li bt1'>
+      <picker bindchange="genderArrayFun" value="{{genderArray}}" range="{{genderArray}}" range-key="name">
+        <view class='a' hover-class='none'>
+          <view class='li-l fl'>性别要求(必填)</view>
+          <view class='li-r' bindtap='bindPickerChange'>
+            <text class='fs28 li-r-subtitle'>{{gender.name}}</text>
+          </view>
+        </view>
+      </picker>
+    </view>
+    <view class='li bt1'>
+      <navigator url='/pages/editDemand/editDemand' class='a' hover-class='none'>
+        <view class='li-l fl'>
+          需求详情(选填)
+          <view class='textLength'>{{demandInfoNum}}/300</view>
+        </view>
+        <view class='li-r'>
+          <text class='fs28 li-r-subtitle'>请填写详细需求详情</text>
+          <van-icon name="arrow" />
+        </view>
+      </navigator>
+    </view>
+  </view>
+  <ctx-nextStep bindtap='post'>发布</ctx-nextStep>
+</view>
+<!-- 男女选择 -->

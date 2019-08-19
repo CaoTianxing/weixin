@@ -1,0 +1,61 @@
+<ctx-navbar back home text="完善资料"></ctx-navbar>
+<view class='pageBox' style="{{'top:' + navigationBarHeight}}">
+  <!-- 列表项 start -->
+  <view class='ul'>
+    <view class='li bt1'>
+      <navigator url='/pages/education/education' class='a' hover-class='none'>
+        <view class='li-l fl'>
+          <view class='fs32 fc-59 clearfix'>
+            <text class='fs32 fc-59 fl'>教育经历</text>
+          </view>
+          <view class='fs26 fc-b3 mt20'>添加您的教育经历</view>
+        </view>
+        <view class='li-r'>
+          <text class='fs28 li-r-subtitle'>去完善</text>
+          <van-icon name="arrow" />
+        </view>
+      </navigator>
+    </view>
+    <view class='li bt1'>
+      <navigator url='/pages/workExperience/workExperience' class='a' hover-class='none'>
+        <view class='li-l fl'>
+          <view class='fs32 fc-59'>工作经历
+          </view>
+          <view class='fs26 fc-b3 mt20'>添加您的工作经历</view>
+        </view>
+        <view class='li-r'>
+          <text class='fs28 li-r-subtitle'>去完善</text>
+          <van-icon name="arrow" />
+        </view>
+      </navigator>
+    </view>
+    <view class='li bt1'>
+      <navigator url='/pages/honorList/honorList' class='a' hover-class='none'>
+        <view class='li-l fl'>
+          <view class='fs32 fc-59'>荣誉资质</view>
+          <view class='fs26 fc-b3 mt20'>添加与服务相关的荣誉介绍</view>
+        </view>
+        <view class='li-r'>
+          <text class='fs28 li-r-subtitle'>去完善</text>
+          <van-icon name="arrow" />
+        </view>
+      </navigator>
+    </view>
+    <view class='li bt1'>
+      <navigator url='/pages/personalCertification/personalCertification' class='a' hover-class='none'>
+        <view class='li-l fl'>
+          <view class='fs32 fc-59'>个人认证</view>
+          <view class='fs26 fc-b3 mt20'>添加与服务相关的问答</view>
+        </view>
+        <view class='li-r'>
+          <text class='fs28 li-r-subtitle'>去完善</text>
+          <van-icon name="arrow" />
+        </view>
+      </navigator>
+    </view>
+  </view>
+  <!-- 列表项 end -->
+
+  <!-- 页脚 -->
+<ctx-nextStep bindtap='save'>提交</ctx-nextStep>
+</view>

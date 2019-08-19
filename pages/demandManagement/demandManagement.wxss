@@ -1,0 +1,159 @@
+/* pages/demandManagement/demandManagement.wxss */
+
+.pageBox {
+    position: absolute;
+    width: 100%;
+}
+
+.active {
+    color: #6747ce!important;
+}
+
+.filtrate {}
+
+.li {
+    background-color: #fff;
+    overflow: hidden;
+    padding: 32rpx 30rpx 0;
+    margin-top: 10rpx;
+}
+
+.li:first-child {
+    margin-top: 0
+}
+
+.li-l {
+    float: left;
+}
+
+.li-r {
+    float: right;
+}
+
+.shopping {
+    font-size: 32rpx;
+    color: #404040
+}
+
+.shopping image {
+    width: 28rpx;
+    height: 24rpx;
+    margin-top: 10rpx
+}
+
+.appointedTime {
+    font-size: 24rpx;
+    color: #808080;
+    margin: 34rpx 0
+}
+
+.candidates {
+    font-size: 24rpx;
+    color: #B3B3B3
+}
+
+.returnPicStatus {
+    font-size: 24rpx;
+    color: #6C4AFD;
+}
+
+.returnPicStatus>image {
+    margin-top: 6rpx;
+    margin-right: 10rpx;
+    width: 25rpx;
+    height: 25rpx;
+}
+
+
+/* 申述状态 */
+
+.representationStatus {
+    margin: 30rpx 0 0;
+    overflow: hidden;
+    text-align: right;
+    color: #FF1F37
+}
+
+.status {
+    font-size: 28rpx;
+    color: #FF3F3F;
+    text-align: right;
+}
+
+.status image {
+    margin-top: 6rpx;
+    width: 26rpx;
+    height: 26rpx;
+}
+
+
+/* 服务金 */
+
+.servePic {
+    overflow: hidden;
+    margin-top: 30rpx;
+}
+
+.servePic image {
+    margin-top: 4rpx;
+    width: 26rpx;
+    height: 27rpx;
+}
+
+.expireDate {
+    font-size: 24rpx;
+    color: #808080;
+    margin: 28rpx 0;
+    text-align: right;
+}
+
+
+/* 重新发布 */
+
+.ComeBack {
+    width: 180rpx;
+    margin-top: 30rpx;
+    height: 40rpx;
+    font-size: 24rpx;
+    line-height: 40rpx;
+    background: rgba(103, 71, 206, 1);
+    border-radius: 20px;
+    color: #fff;
+    text-align: center
+}
+
+.candidatesImg {
+    margin: 28rpx 0 0;
+    overflow: hidden;
+}
+
+.candidatesImg image {
+    width: 40rpx;
+    height: 40rpx;
+    float: right;
+    border-radius: 50%;
+    margin-left: -4rpx;
+    border: 1px solid #fff;
+}
+
+.btns {
+    overflow: hidden;
+    padding: 20rpx 0 30rpx;
+}
+
+.btns>view {
+    width: 127rpx;
+    height: 51rpx;
+    line-height: 51rpx;
+    border: 1px solid rgba(103, 71, 206, 1);
+    border-radius: 25px;
+    text-align: center;
+    float: left;
+    font-size: 20rpx;
+    color: #6747CE;
+    margin-left: 14rpx;
+}
+
+.btns>view:first-child {
+    margin-left: 0;
+}

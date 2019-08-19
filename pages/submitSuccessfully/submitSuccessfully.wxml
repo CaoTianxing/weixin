@@ -1,0 +1,13 @@
+<view class='pageBox'>
+  <view class='title'>
+    <image src='../../static/images/submitSuccessfully/submitSuccessfully-1.png'></image>
+  </view>
+  <view class='p1'>平台将在24小时内完成审核</view>
+  <view class='p2'>届时将会通过短信及系统消息进行通知</view>
+
+  <!-- 页脚 -->
+  <view class='footer'>
+    <navigator hover-class="none" url='/pages/skillOrder/skillOrder'>技能管理</navigator>
+    <navigator hover-class="none" url='/pages/index/index' class='ml50'>首页</navigator>
+  </view>
+</view> 

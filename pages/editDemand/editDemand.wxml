@@ -1,0 +1,11 @@
+<ctx-navbar back home text="{{pageTitle}}"></ctx-navbar>
+<view class='pageBox' style="position: absolute;{{'top:' + navigationBarHeight}}">
+
+
+  <view class='editBox'>
+    <textarea auto-focus bindinput="textareaValue" value="{{demandInfo}}" class="ql-container"  auto-height placeholder="请填写您提供的服务信息" />
+    <view class='editBoxFot'>(最多300字)</view>
+  </view>
+
+  <ctx-nextStep bindtap='getData'>保存</ctx-nextStep>
+</view>

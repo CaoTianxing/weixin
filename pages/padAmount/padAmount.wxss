@@ -1,0 +1,23 @@
+page{
+  padding: 0 30rpx;
+  box-sizing: border-box
+}
+.padmar{
+  margin-top: 10rpx;
+  height: 98rpx;
+  background-color: #fff;
+  line-height: 98rpx;
+}
+.test{
+  font-size: 30rpx;
+  color: #595959
+}
+.edit{
+  height: 100%;
+}
+.edit input{
+  text-align: right;
+  height: 100%;
+  line-height: 98rpx;
+  font-size: 26rpx;
+}

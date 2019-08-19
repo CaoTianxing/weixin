@@ -1,0 +1,69 @@
+<view class='pageBox'>
+  <view class='title'>
+    <image src='../../static/images/successfullyReleased/successfullyReleased-1.png'></image>
+  </view>
+  <!-- 用户头像 -->
+  <view class='userImg'>
+    <image class='coverImg' src='https://artmkt-web.b0.upaiyun.com/head/head_3312_1543158068.png'></image>
+    <image class='success' src='../../static/images/successfullyReleased/successfullyReleased-4.png'></image>
+  </view>
+  <!-- 位置 -->
+  <view class='gprs'>
+    <image src='../../static/images/successfullyReleased/successfullyReleased-2.png'></image>
+    <text>9.5km</text>
+  </view>
+  <!-- msg -->
+  <text class='p'>现在为您通知更多的服务提供者</text>
+  <!-- num -->
+  <view class='num'>
+    <text class='num-l'>7</text>
+    <text class='num-r'>位</text>
+  </view>
+  <view class='allUser'>
+    <view class='allUser-li'>
+      <image src='https://artmkt-web.b0.upaiyun.com/head/head_3312_1543158068.png' class='allUser-li-t'></image>
+      <image src='../../static/images/successfullyReleased/successfullyReleased-2.png' class='allUser-li-icon'></image>
+      <text class='allUser-li-txt'>9.5km</text>
+    </view>
+    <view class='allUser-li'>
+      <image src='https://artmkt-web.b0.upaiyun.com/head/head_3312_1543158068.png' class='allUser-li-t'></image>
+      <image src='../../static/images/successfullyReleased/successfullyReleased-2.png' class='allUser-li-icon'></image>
+      <text class='allUser-li-txt'>9.5km</text>
+    </view>
+    <view class='allUser-li'>
+      <image src='https://artmkt-web.b0.upaiyun.com/head/head_3312_1543158068.png' class='allUser-li-t'></image>
+      <image src='../../static/images/successfullyReleased/successfullyReleased-2.png' class='allUser-li-icon'></image>
+      <text class='allUser-li-txt'>9.5km</text>
+    </view>
+    <view class='allUser-li'>
+      <image src='https://artmkt-web.b0.upaiyun.com/head/head_3312_1543158068.png' class='allUser-li-t'></image>
+      <image src='../../static/images/successfullyReleased/successfullyReleased-2.png' class='allUser-li-icon'></image>
+      <text class='allUser-li-txt'>9.5km</text>
+    </view>
+    <view class='allUser-li'>
+      <image src='https://artmkt-web.b0.upaiyun.com/head/head_3312_1543158068.png' class='allUser-li-t'></image>
+      <image src='../../static/images/successfullyReleased/successfullyReleased-2.png' class='allUser-li-icon'></image>
+      <text class='allUser-li-txt'>9.5km</text>
+    </view>
+    <view class='allUser-li'>
+      <image src='https://artmkt-web.b0.upaiyun.com/head/head_3312_1543158068.png' class='allUser-li-t'></image>
+      <image src='../../static/images/successfullyReleased/successfullyReleased-2.png' class='allUser-li-icon'></image>
+      <text class='allUser-li-txt'>9.5km</text>
+    </view>
+    <view class='allUser-li'>
+      <image src='https://artmkt-web.b0.upaiyun.com/head/head_3312_1543158068.png' class='allUser-li-t'></image>
+      <image src='../../static/images/successfullyReleased/successfullyReleased-2.png' class='allUser-li-icon'></image>
+      <text class='allUser-li-txt'>9.5km</text>
+    </view>
+    <view class='allUser-li'>
+      <image src='https://artmkt-web.b0.upaiyun.com/head/head_3312_1543158068.png' class='allUser-li-t'></image>
+      <image src='../../static/images/successfullyReleased/successfullyReleased-2.png' class='allUser-li-icon'></image>
+      <text class='allUser-li-txt'>9.5km</text>
+    </view>
+  </view>
+
+  <!-- 页脚 -->
+  <view class='footer'>
+    <button hover-class='none'>查看全部应邀</button>
+  </view>
+</view>

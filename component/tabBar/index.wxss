@@ -1,0 +1,23 @@
+.tabbar{
+  height: 98rpx;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  left: 0;
+  display: flex;
+}
+.li{
+  width: 33.33%;
+  text-align: center
+}
+
+.li-img{
+  width: 50rpx;
+  height: 50rpx;
+  display: block;
+  margin: 14rpx auto 4rpx;
+}
+.li-name{
+  color: #7450E8;
+}

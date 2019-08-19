@@ -1,0 +1,71 @@
+<ctx-navbar back home text="个人认证"></ctx-navbar>
+<view class='pageBox' style="{{'top:' + navigationBarHeight}}">
+  <!-- 列表项 start -->
+  <view class='ul'>
+    <view class='li bt1' bindtap='phoneRen'>
+      <view class='a' hover-class='none'>
+        <view class='li-l fl' >
+          <view class='fs32 fc-59 clearfix'>
+            <text class='fs32 fc-59 fl'>手机认证</text>
+          </view>
+        </view>
+        <view class='li-r'>
+          <text class='fs28 li-r-subtitle'>去完善</text>
+          <van-icon name="arrow" />
+        </view>
+      </view>
+    </view>
+    <view class='li bt1'>
+      <navigator url='/pages/authentication/authentication' class='a' hover-class='none'>
+        <view class='li-l fl'>
+          <view class='fs32 fc-59'>身份认证</view>
+        </view>
+        <view class='li-r'>
+          <text class='fs28 li-r-subtitle'>去完善</text>
+          <van-icon name="arrow" />
+        </view>
+      </navigator>
+    </view>
+    <view class='li bt1'>
+      <navigator url='/pages/honorList/honorList' class='a' hover-class='none'>
+        <view class='li-l fl'>
+          <view class='fs32 fc-59'>微信认证</view>
+        </view>
+        <view class='li-r'>
+          <text class='fs28 li-r-subtitle'>去完善</text>
+          <van-icon name="arrow" />
+        </view>
+      </navigator>
+    </view>
+    <view class='li bt1'>
+      <navigator url='/pages/personalCertification/personalCertification' class='a' hover-class='none'>
+        <view class='li-l fl'>
+          <view class='fs32 fc-59'>支付宝认证</view>
+        </view>
+        <view class='li-r'>
+          <text class='fs28 li-r-subtitle'>去完善</text>
+          <van-icon name="arrow" />
+        </view>
+      </navigator>
+    </view>
+  </view>
+  <!-- 列表项 end -->
+  <van-dialog use-slot title="手机验证" show="{{ show }}" show-cancel-button bind:close="closeFun" bind:confirm="confirmFun">
+    <view class='Alert'>
+      <view class='Alert-in'>
+        <text>手机号</text>
+        <input type="number" bindinput='changePhone' placeholder="请输入手机号" />
+      </view>
+      <view class='Alert-in'>
+        <text>验证码</text>
+        <input type="number" bindinput='changePhoneCode' placeholder="请输入验证码" />
+        <view class='setTime'>
+          <text class='timeNum' bindtap='getVift' wx:if='{{!isTimeNum}}'>获取验证码</text>
+          <text class='timeNum fc-b3' wx:if='{{isTimeNum}}'>{{timeNum}}秒后重新发送</text>
+        </view>
+      </view>
+    </view>
+  </van-dialog>
+  <!-- 页脚 -->
+  <ctx-nextStep bindtap='save'>提交</ctx-nextStep>
+</view>

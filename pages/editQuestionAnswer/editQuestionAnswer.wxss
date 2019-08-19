@@ -1,0 +1,64 @@
+.ul {
+  margin-bottom: 10rpx;
+}
+
+.li {
+  width: 100%;
+  background-color: #fff;
+  padding: 0 30rpx;
+  height: 160rpx;
+  line-height: 160rpx;
+  overflow: hidden;
+}
+
+.li > image {
+  margin-top: 35rpx;
+  width: 90rpx;
+  height: 90rpx;
+  float: left;
+}
+
+.li-r {
+  margin-left: 110rpx;
+}
+
+.cross {
+  height: 24rpx;
+  width: 24rpx;
+  float: left;
+  margin-top: 7rpx;
+  margin-right: 10rpx;
+}
+
+
+.itemLi{
+  background-color: #fff;
+}
+.itemLi-t, .itemLi-b {
+  height: 100rpx;
+  line-height: 100rpx;
+  padding: 0 30rpx;
+}
+
+.itemLi-t {
+  font-size: 30rpx;
+  color: #595959;
+  position: relative
+}
+
+.itemLi-t-l {
+}
+
+
+
+.itemLi-b {
+  font-size: 24rpx;
+}
+
+.itemLi-b input {
+  height: 100%;
+}
+
+
+
+

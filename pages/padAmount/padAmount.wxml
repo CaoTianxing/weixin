@@ -1,0 +1,7 @@
+<view class='pageBox'>
+  <view class='padmar clearfix'>
+    <view class='test fl'>服务金额</view>
+    <view class='edit fr'><input placeholder='请填写相对应的服务报酬' placeholder-class='fc-b3'></input></view>
+  </view>
+  <ctx-nextStep>确定</ctx-nextStep>
+</view>

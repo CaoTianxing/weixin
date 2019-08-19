@@ -1,0 +1,60 @@
+<ctx-navbar back home text="服务方式"></ctx-navbar>
+<view class='pageBox' style="{{'top:' + navigationBarHeight}}">
+  <!-- 顶部标题 start -->
+  <view class='title'>
+    <text class='title-t'>填写服务报价</text>
+    <text class='title-b'>即开启相应服务方式</text>
+  </view>
+  <!-- 顶部标题 end -->
+  <!-- 列表项 start -->
+  <view class='ul'>
+    <view class='li'>
+      <view class='li-l fl'>线下服务:</view>
+      <!-- <view class='li-subtitle fl'>（同城线下服务）</view> -->
+      <view class='li-edit'>
+        <input placeholder='（同城线下服务）' value="{{OfflineValue}}" bindinput='getOfflineValue' focus type='digit'></input>元
+        <view class='check fl'>
+          
+          <radio-group class="radio-group fl" bindchange="Offline">
+            <label class="radio fl" wx:for="{{OfflineCheck}}" wx:key='{{index}}'>
+              <radio color='#6545C9' class='fl' value="{{item.name}}" checked="{{item.checked}}" />
+              {{item.value}}
+            </label>
+          </radio-group>
+        </view>
+      </view>
+    </view>
+    <view class='li'>
+      <view class='li-l fl'>电话咨询:</view>
+      <!-- <view class='li-subtitle fl'>（全国电话资讯服务）</view> -->
+      <view class='li-edit'>
+        <input placeholder='（全国电话资讯服务）' bindinput='getphoneValue' value="{{phoneValue}}" type='digit'></input>元
+        <view class='check fl'>
+          <radio-group class="radio-group fl" bindchange="phoneCheck">
+            <label class="radio fl" wx:for="{{phoneCheckList}}" wx:key='{{index}}'>
+              <radio color='#6545C9' class='fl' value="{{item.name}}" checked="{{item.checked}}" />
+              {{item.value}}
+            </label>
+          </radio-group>
+        </view>
+      </view>
+    </view>
+    <view class='li'>
+      <view class='li-l fl'>线上服务:</view>
+      <!-- <view class='li-subtitle fl'>（全国线上服务）</view> -->
+      <view class='li-edit'>
+        <input placeholder='（全国线上服务）' bindinput='getonLineValue' value="{{onLineValue}}"  type='digit'></input>元
+        <view class='check fl'>
+          <radio-group class="radio-group fl" bindchange="onLineCheck">
+            <label class="radio fl" wx:for="{{onLineCheckList}}" wx:key='{{index}}'>
+              <radio color='#6545C9' class='fl' value="{{item.name}}" checked="{{item.checked}}" />
+              {{item.value}}
+            </label>
+          </radio-group>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 列表项 end -->
+  <ctx-nextStep bindtap='save'>保存</ctx-nextStep>
+</view>

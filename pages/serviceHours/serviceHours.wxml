@@ -1,0 +1,22 @@
+<ctx-navbar back home text="服务时间"></ctx-navbar>
+
+<view class='ul' style="{{'top:' + navigationBarHeight}}">
+  <picker mode="date" value="{{startDate}}" bindchange="bindDateChangeStart">
+    <view class='li fs32'>开始时间
+      <text class='fr fc-b3'>{{startDate}}</text>
+    </view>
+  </picker>
+  <picker mode="date" value="{{endDate}}" bindchange="bindDateChangeEnd">
+    <view class='li fs32'>结束时间
+      <text class='fr fc-b3'>{{endDate}}</text>
+    </view>
+  </picker>
+  <picker  bindchange="timeSlotFun" value="{{timeSlotArr}}" range="{{timeSlotArr}}" range-key="name">
+    <view class='li fs32'>服务时段
+      <text class='fr fc-b3'>{{timeSlot.name}}</text>
+    </view>
+  </picker>
+
+</view>
+<!-- 页脚 -->
+<ctx-nextStep bindtap='save'>保存</ctx-nextStep>

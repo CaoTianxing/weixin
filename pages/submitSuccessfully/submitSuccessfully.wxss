@@ -1,0 +1,40 @@
+page{
+
+}
+.title{
+  margin-top: 300rpx;
+  text-align: center
+}
+.title image{
+  width: 334rpx;
+  height: 276rpx;
+}
+
+
+.p1,.p2{
+  text-align: center;
+  color: #000000;
+  font-size: 26rpx;
+   margin-top: 30rpx;
+}
+
+
+/* 页脚 */
+.footer{
+  padding: 0 30rpx;
+  position: fixed;
+  bottom: 60rpx;
+  
+}
+navigator{
+  float: left;
+  width: 320rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  border-radius: 50rpx;
+  border: 1px solid #1690ED;
+  color: #1690ED;
+  font-size: 26rpx;
+
+}

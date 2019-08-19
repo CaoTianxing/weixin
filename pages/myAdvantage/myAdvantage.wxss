@@ -1,0 +1,56 @@
+page {
+  background-color: #fff;
+}
+
+.pageBox {
+  position: absolute;
+  width: 100%;
+}
+
+.title {
+  margin-bottom: 50rpx;
+  margin-top: 40rpx;
+  color: #006cff;
+  font-size: 34rpx;
+  text-align: center;
+  font-weight: bold;
+}
+
+.bt1 {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.li {
+  padding: 30rpx;
+  overflow: hidden;
+  height: 150rpx;
+  background-color: #fff;
+  position: relative;
+}
+
+.li-r {
+  font-size: 32rpx;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 30rpx;
+}
+
+.a {
+  overflow: hidden;
+}
+
+.li-r-subtitle {
+  height: 100%;
+  float: left;
+  color: #3775f5;
+  align-items: center; /*垂直*/
+  justify-content: center; /*水平*/
+}
+
+van-icon {
+  color: #3775f5;
+  float: right;
+  align-items: center; /*垂直*/
+  justify-content: center; /*水平*/
+}

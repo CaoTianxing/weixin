@@ -1,0 +1,639 @@
+/* 头部开始 */
+
+.header {
+  height: 432rpx;
+  position: relative;
+  overflow: hidden;
+}
+
+.header::before {
+  content: '';
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -10;
+  background-color: #6747ce;
+}
+
+.header::after {
+  content: '';
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: -10;
+  bottom: 0;
+  background-color: #fff;
+}
+
+.header-userBox {
+  margin-top: 170rpx;
+  margin-left: 90rpx;
+  overflow: hidden;
+}
+
+.header-userImg {
+  border-radius: 50%;
+  border: 11rpx solid #6747ce;
+  height: 160rpx;
+  width: 160rpx;
+  overflow: hidden;
+}
+
+.header-userImg > image {
+  height: 100%;
+  width: 100%;
+}
+
+.header-user {
+  margin-left: 170rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-user-name {
+  font-size: 34rpx;
+  color: #fff;
+}
+
+.serveIcon {
+  margin: 24rpx 0;
+}
+
+.serveIcon image {
+  width: 32rpx;
+  margin-left: 5rpx;
+  height: 32rpx;
+}
+
+
+.attention button {
+  float: left;
+  width: 241rpx;
+  height: 46rpx;
+  line-height: 46rpx;
+  font-size: 28rpx;
+  color: #fff;
+  border-radius: 50px;
+  background-color: #6a47ff;
+}
+
+.serveNum {
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.serveNum-li {
+  font-size: 24rpx;
+  text-align: center;
+  width: 20%;
+  height: 70rpx;
+  line-height: 70rpx;
+  float: left;
+  color: #999;
+}
+
+.serveNum-li text:last-child {
+  color: #6c4afd;
+  font-weight: bold;
+  margin-left: 10rpx;
+}
+
+/* 头部结束 */
+
+/* 荣誉资质 start */
+
+.scrol-wrap {
+  background-color: #fff;
+  padding: 12rpx 12rpx;
+  overflow: hidden;
+  margin: 10rpx 0;
+}
+
+.scrol-wrap-title {
+  font-size: 30rpx;
+  padding-left: 12rpx;
+  font-weight: bold;
+  border-left: 6rpx solid #6c4afd;
+}
+
+.scrol-wrap-content {
+  display: flex;
+  padding: 20rpx 10rpx;
+  flex-direction: row;
+  width: 5600rpx;
+}
+
+.scrol-wrap-content > view {
+  width: 672rpx;
+  overflow: hidden;
+  padding: 14rpx;
+  margin-right: 15rpx;
+  height: 212rpx;
+  border-radius: 5px;
+  box-shadow: 0px 0px 14rpx 2rpx rgba(0, 0, 0, 0.2);
+}
+
+.scrol-wrap-content-title {
+  color: #404040;
+  font-size: 26rpx;
+  margin-bottom: 15rpx;
+}
+
+.scrol-wrap-content > view > image {
+  width: 130rpx;
+  height: 130rpx;
+  float: left;
+}
+
+.scrol-wrap-content-r {
+  margin-left: 150rpx;
+}
+
+.scrol-wrap-content-r-t {
+  color: #595959;
+  font-size: 24rpx;
+}
+
+.scrol-wrap-content-r-b {
+  overflow: hidden;
+  margin-top: 5rpx;
+}
+
+.scrol-wrap-content-r-b > text {
+  font-size: 18rpx;
+  color: #595959;
+}
+
+/* 荣誉资质 end */
+
+/* 其他服务 start */
+.other-service{
+  background-color: #fff;
+  margin: 20rpx 0;
+  padding: 12rpx;
+}
+.other-service-li{
+  position: relative;
+  margin-top: 200rpx;
+  
+  z-index: 1;
+
+}
+.other-service-title{
+  border: 1px solid red;
+  display: flex;
+  width: 123rpx;
+  position: absolute;
+  background-color: #fff;
+  top: -150rpx;
+  z-index: -1;
+  height: 243rpx;
+  border-radius: 40rpx;
+  flex-direction: column;
+  align-items: center
+}
+.other-service-title image{
+  width: 70rpx;
+  margin-top: 18rpx;
+  height: 70rpx;
+}
+
+
+.other-service-title text{
+  font-size: 24rpx;
+  margin-top: 16rpx;
+  color: #404040;
+}
+
+.other-service-cont{
+  border: 1px solid blue;
+  
+}
+/* 其他服务 end */
+
+
+
+
+
+/* 服务方式 start */
+
+.serveManner {
+  background-color: #fff;
+  padding: 30rpx 0 40rpx;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.h1 {
+  font-size: 30rpx;
+  font-weight: bold;
+  padding-left: 12rpx;
+  margin-left: 16rpx;
+  border-left: 6rpx solid #6c4afd;
+}
+.h2 {
+  font-size: 30rpx;
+  font-weight: bold;
+  padding-left: 12rpx;
+}
+
+.serveLabel {
+  font-size: 26rpx;
+  color: #595959;
+  overflow: hidden;
+}
+
+.serveLabel text {
+  padding: 0 10rpx;
+  height: 48rpx;
+  line-height: 48rpx;
+  background-color: #6C4AFD;
+  color: #fff;
+  text-align: center;
+  border-radius: 6rpx;
+  float: left;
+  margin-top: 20rpx;
+  margin: 20rpx 10rpx 0;
+}
+/* .serveLabel text:last-child{
+  
+  margin-right: 0;
+} */
+
+/* 服务方式 end */
+
+/* 服务内容 start */
+
+.serveCont {
+  padding: 20rpx 36rpx 0;
+  line-height: 45rpx;
+  color: #595959;
+  font-size: 26rpx;
+}
+
+/* 服务内容 end */
+
+/* 教育经历 start */
+
+.educationList {
+  padding: 0 36rpx;
+  overflow: hidden;
+}
+
+.school {
+  margin-top: 38rpx;
+  color: #404040;
+  font-size: 26rpx;
+  font-weight: bold;
+  float: left;
+  width: 50%;
+}
+
+.schoolDate {
+  color: #595959;
+  margin-top: 38rpx;
+  float: left;
+  text-align: right;
+  font-size: 26rpx;
+  width: 50%;
+}
+
+.Education {
+  width: 100%;
+  margin-top: 20rpx;
+}
+
+.Education text {
+  margin-left: 20rpx;
+}
+
+/* 教育经历 end */
+
+/* 视频介绍 start */
+
+.videoBox {
+  overflow: hidden;
+  padding: 0 30rpx;
+}
+
+video {
+  /* z-index: -1 */
+}
+
+.videoBox video {
+  border-radius: 6rpx;
+  margin-top: 28rpx;
+  width: 100%;
+}
+
+/* 视频介绍 end */
+
+/* 图片介绍 start */
+
+.allServeImg {
+  float: right;
+  margin-top: 8rpx;
+  margin-right: 30rpx;
+}
+
+.righticon {
+  margin-top: 2rpx;
+  float: right;
+  color: #bfbfbf;
+}
+
+navigator {
+  color: #bfbfbf;
+}
+
+.serveImgBox {
+  padding: 0 30rpx;
+  display: flex;
+  font-size: 22rpx;
+  margin-top: 24rpx;
+}
+
+.serveImgBox image {
+  width: 220rpx;
+  height: 220rpx;
+  margin-left: 15rpx;
+}
+
+.serveImgBox image:first-child {
+  margin-left: 0;
+}
+
+/* 图片介绍 end */
+
+/* 其他服务 start */
+
+.nav {
+  padding: 34rpx 0;
+  background-color: #fff;
+}
+
+.nav-ul {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mt28 {
+  margin-top: 28rpx;
+}
+
+.navtext {
+  font-size: 24rpx;
+  color: #404040;
+  margin-top: 16rpx;
+}
+
+.nav-li {
+  width: 25%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.nav-li image {
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.nav-li > view {
+  margin-top: 16rpx;
+}
+
+/* 其他服务 end */
+
+/* 评价 start */
+
+.evaluate {
+  overflow: hidden;
+  width: 650rpx;
+  margin: auto;
+  padding: 46rpx 0 30rpx;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.evaluate-l {
+  width: 314rpx;
+  float: left;
+}
+
+.leftGrade {
+  display: block;
+  font-size: 28rpx;
+  color: #404040;
+}
+
+.fen {
+  margin-top: 40rpx;
+}
+
+.GradeNum {
+  text-align: center;
+}
+
+.FF4040 {
+  color: #ff4040;
+}
+
+.evaluationBox {
+  position: relative;
+}
+
+.evaluationRes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 96rpx;
+  margin-top: 34rpx;
+}
+
+.evaluationRes image, .evaluate-r image {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.evaluationRes image {
+  margin: 0 3rpx;
+  float: left;
+}
+
+.evaluate-r {
+  margin-left: 314rpx;
+  overflow: hidden;
+}
+
+.evaluateItem {
+  margin-top: 34rpx;
+  overflow: hidden;
+}
+
+.evaluateItem:first-child {
+  margin-top: 0;
+}
+
+.evaluateItemTxt, .evaluateItemImgBox, .evaluateItemNum {
+  float: left;
+}
+
+.evaluateItemNum {
+  font-size: 28rpx;
+  float: left;
+}
+
+.evaluateItemImgBox {
+  position: relative;
+  width: 186rpx;
+  height: 30rpx;
+}
+
+.evaluateItembg, .evaluateItemImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.evaluateItembg image, .evaluateItemImg image {
+  margin: 0 3rpx;
+}
+
+.borderHr {
+  padding-top: 40rpx;
+  border-top: 1px solid red;
+  width: 80%;
+  margin: auto;
+}
+
+/* 评价用户 评价内容 start */
+
+.evaluateuserBox {
+  margin-top: 10rpx;
+  border-bottom: 1px solid #f5f5f5;
+  background-color: #fff;
+  padding: 20rpx 30rpx;
+  position: relative;
+}
+
+.evaluateData {
+  position: absolute;
+  right: 30rpx;
+  top: 20rpx;
+  color: #bfbfbf;
+  font-size: 22rpx;
+}
+
+.evaluateuserImg {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  float: left;
+}
+
+.evaluateuserInfo {
+  margin-left: 115rpx;
+  font-size: 34rpx;
+  font-weight: bold;
+}
+
+.evaluateuserInfoIcon {
+  margin-top: 20rpx;
+  overflow: hidden;
+}
+
+.evaluateuserInfoIcon .evaluatesex {
+  position: relative;
+  float: left;
+}
+
+.evaluateuserInfoIcon .evaluatesex text {
+  position: absolute;
+  height: 26rpx;
+  line-height: 26rpx;
+  left: 25rpx;
+  top: 4rpx;
+  font-size: 28rpx;
+  font-weight: normal;
+  color: #fff;
+}
+
+.evaluatesex > image {
+  width: 70rpx;
+  height: 32rpx;
+}
+
+.evaluationCont {
+  font-size: 24rpx;
+  color: #333;
+  line-height: 40rpx;
+  margin-top: 26rpx;
+}
+
+/* 评价用户 评价内容 end */
+
+/* 评价 end */
+
+/* 页脚 start */
+
+.footer {
+  height: 110rpx !important;
+  position: fixed;
+  bottom: 0;
+  overflow: hidden;
+  padding: 22rpx 24rpx;
+  box-sizing: border-box;
+  width: 100%;
+  /* z-index: 1000000; */
+  background-color: #fff;
+  box-shadow: 0rpx 0rpx 30rpx 2rpx rgba(0, 0, 0, 0.2);
+}
+
+.footer-l {
+  float: left;
+  font-size: 28rpx;
+  color: #404040;
+  font-weight: bold;
+  position: relative;
+  z-index: 10000;
+}
+
+.gps {
+  font-size: 20rpx;
+  color: #808080;
+  font-weight: normal;
+  margin-top: 10rpx;
+}
+
+.gps cover-image {
+  width: 28rpx;
+  height: 22rpx;
+  float: left;
+}
+
+.footer-r {
+  width: 150rpx;
+  height: 60rpx;
+  color: #fff;
+  line-height: 66rpx;
+  font-size: 28rpx;
+  text-align: center;
+  float: right;
+  margin-top: 6rpx;
+  border-radius: 34rpx;
+}
+
+.footer-r cover-image {
+  width: 100%;
+  height: 100%;
+}
+
+/* 页脚 end */
+
+.pageBox {
+  padding-bottom: 110rpx;
+}

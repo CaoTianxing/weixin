@@ -1,0 +1,149 @@
+<view class='pageBox'>
+  <van-tabs swipeable animated sticky bind:change="onChange" color='#6747CE' tab-active-class='active'>
+    <!-- 待应邀 -->
+    <van-tab title="待应邀">
+      <view class='userLi clearfix'>
+        <navigator url='/pages/orderDetails/orderDetails' hover-class='none'>
+          <image class='userImg' src='http://img3.imgtn.bdimg.com/it/u=1241134888,3475164417&fm=26&gp=0.jpg'></image>
+          <text class="distance">1.0km</text>
+          <view class="pic">诚意金
+            <text class='fc-62'>￥50</text>
+          </view>
+          <view class='userInfo'>
+            <!-- 用户名 -->
+            <view class='username'>大帅哥1</view>
+            <view class='userInfoIcon'>
+              <view class='sex'>
+                <image src='../../static/images/index/index-12.png'></image>
+                <text>22</text>
+              </view>
+              <image src='../../static/images/index/index-13.png'></image>
+              <image src='../../static/images/index/index-14.png'></image>
+              <image src='../../static/images/index/index-15.png'></image>
+              <image src='../../static/images/index/index-16.png'></image>
+            </view>
+            <!-- 服务内容 -->
+            <view class='ServeContent'>
+              <image src='../../static/images/index/index-17.png'></image>
+              <text>逛商场</text>
+            </view>
+            <!-- 服务简介 -->
+            <view class='ServeInfo'>预约时间：
+              <text>2019-1-1 12:23-2019-1-2 12:23</text>
+            </view>
+          </view>
+          <view class='serveBtn'>
+            <button hover-class="none" style='background-color:#6747CE;color: #fff;border: none'>立即应邀</button>
+          </view>
+        </navigator>
+      </view>
+    </van-tab>
+    <!-- 进行中 -->
+    <van-tab title="进行中">
+      <view class='userLi clearfix'>
+        <image class='userImg' src='http://img3.imgtn.bdimg.com/it/u=1241134888,3475164417&fm=26&gp=0.jpg'></image>
+        <text class="distance">1.0km</text>
+        <view class="pic">诚意金
+          <text class='fc-62'>￥50</text>
+        </view>
+        <view class='userInfo'>
+          <!-- 用户名 -->
+          <view class='username'>大帅哥1</view>
+          <view class='userInfoIcon'>
+            <view class='sex'>
+              <image src='../../static/images/index/index-12.png'></image>
+              <text>22</text>
+            </view>
+            <image src='../../static/images/index/index-13.png'></image>
+            <image src='../../static/images/index/index-14.png'></image>
+            <image src='../../static/images/index/index-15.png'></image>
+            <image src='../../static/images/index/index-16.png'></image>
+          </view>
+          <!-- 服务内容 -->
+          <view class='ServeContent'>
+            <image src='../../static/images/index/index-17.png'></image>
+            <text>逛商场</text>
+          </view>
+          <!-- 服务简介 -->
+          <view class='ServeInfo'>预约时间：
+            <text>2019-1-1 12:23-2019-1-2 12:23</text>
+          </view>
+        </view>
+        <view class='serveBtn'>
+          <button hover-class="none" bindtap='fillInTheAmount'>填写金额</button>
+          <button hover-class="none">开始服务</button>
+          <button hover-class="none">打电话</button>
+          <button hover-class="none">发消息</button>
+        </view>
+      </view>
+    </van-tab>
+    <!-- 已成交 -->
+    <van-tab title="已成交">
+      <view class='userLi clearfix'>
+        <navigator url='/pages/transactiondetails/transactiondetails' hover-class='none'>
+          <image class='userImg' src='http://img3.imgtn.bdimg.com/it/u=1241134888,3475164417&fm=26&gp=0.jpg'></image>
+          <text class="distance">1.0km</text>
+          <view class="pic">服务金额
+            <text class='fc-62'>￥50</text>
+          </view>
+          <view class='userInfo'>
+            <!-- 用户名 -->
+            <view class='username'>大帅哥1</view>
+            <view class='userInfoIcon'>
+              <view class='sex'>
+                <image src='../../static/images/index/index-12.png'></image>
+                <text>22</text>
+              </view>
+              <image src='../../static/images/index/index-13.png'></image>
+              <image src='../../static/images/index/index-14.png'></image>
+              <image src='../../static/images/index/index-15.png'></image>
+              <image src='../../static/images/index/index-16.png'></image>
+            </view>
+            <!-- 服务内容 -->
+            <view class='ServeContent'>
+              <image src='../../static/images/index/index-17.png'></image>
+              <text>逛商场</text>
+            </view>
+          </view>
+        </navigator>
+      </view>
+    </van-tab>
+    <!-- 未完成 -->
+    <van-tab title="未完成">
+      <view class='userLi clearfix'>
+        <image class='userImg' src='http://img3.imgtn.bdimg.com/it/u=1241134888,3475164417&fm=26&gp=0.jpg'></image>
+        <text class="distance">1.0km</text>
+        <view class="pic">诚意金
+          <text class='fc-62'>￥50</text>
+        </view>
+        <view class='userInfo'>
+          <!-- 用户名 -->
+          <view class='username'>大帅哥1</view>
+          <view class='userInfoIcon'>
+            <view class='sex'>
+              <image src='../../static/images/index/index-12.png'></image>
+              <text>22</text>
+            </view>
+            <image src='../../static/images/index/index-13.png'></image>
+            <image src='../../static/images/index/index-14.png'></image>
+            <image src='../../static/images/index/index-15.png'></image>
+            <image src='../../static/images/index/index-16.png'></image>
+          </view>
+          <!-- 服务内容 -->
+          <view class='ServeContent'>
+            <image src='../../static/images/index/index-17.png'></image>
+            <text>逛商场</text>
+          </view>
+          <!-- 服务简介 -->
+          <view class='ServeInfo'>预约时间：
+            <text>2019-1-1 12:23-2019-1-2 12:23</text>
+          </view>
+        </view>
+        <view class='serveBtn'>
+          <button hover-class="none">申述订单</button>
+          <button hover-class="none" bindtap='toView'>查看原因</button>
+        </view>
+      </view>
+    </van-tab>
+  </van-tabs>
+</view>

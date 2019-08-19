@@ -1,0 +1,29 @@
+<ctx-navbar text="选择需求"></ctx-navbar>
+
+<view class='pageBox' style="{{'top:' + navigationBarHeight}}">
+    <view class='jumpOver'>
+        <view class='jumpOver-in' bindtap='nextIndex'>跳过</view>
+    </view>
+    <view class='titie1'>请选择3个您需要的技能</view>
+    <view class='titie2'>我们将为您筛选提供服务</view>
+    <view wx:for='{{labelList}}' wx:key='{{index}}'>
+        <view class='PopularService'>
+            <view class='hr'></view>
+            <view class='cont'>{{item.name}}</view>
+        </view>
+        <!-- 热门服务 end -->
+        <!-- 列表项 start -->
+        <view class="ul1 {{isExpand == true ? 'ExpandTrue' : ''}}">
+            <block wx:for='{{item.contentList}}' wx:key='{{index}}'>
+                <view class='li1' bindtap='addActive' data-index="{{item.id}}">
+                    <view class="li1-in {{item.active == 1 ? 'border1' : ''}}">
+                        {{item.name}}
+                        <image wx:if="{{item.active == 1}}" src='../../static/images/aboutTa/aboutTa-2.png'></image>
+                    </view>
+                </view>
+            </block>
+        </view>
+        <!-- 列表项 end -->
+    </view>
+</view>
+<ctx-nextStep bindtap="postData">一键发布</ctx-nextStep>

@@ -1,0 +1,114 @@
+<!-- 用户 start -->
+<view class='user'>
+  <image class='userImg' src='http://img3.imgtn.bdimg.com/it/u=1241134888,3475164417&fm=26&gp=0.jpg'></image>
+  <view class='userInfo'>
+    <view class='userInfo-t'>
+      <text>大帅哥</text>
+    </view>
+    <view class='userInfo-c'>
+      <!-- 年龄 -->
+      <view class='age'>
+        <image src='../../static/images/index/index-12.png'></image>
+        <text>22</text>
+      </view>
+      <view class='usericon'>
+        <image src='../../static/images/index/index-13.png'></image>
+        <image src='../../static/images/index/index-14.png'></image>
+        <image src='../../static/images/index/index-15.png'></image>
+        <image src='../../static/images/index/index-16.png'></image>
+      </view>
+    </view>
+    <view class='userInfo-b'>
+      9.5km
+    </view>
+  </view>
+</view>
+<!-- 用户 end -->
+<!-- 内容 start -->
+
+<view class='content mt10'>
+  <image class='logo' src='../../static/images/index/index-3.png'></image>
+  <text class='stroll'>逛商场</text>
+  <view class='price'>
+    <text class='price-in'>诚意金：</text>
+    <text class='price-in'>￥50</text>
+  </view>
+</view>
+<!-- 内容 end -->
+
+<!-- 需求 start -->
+
+<view class='demand mt10 clearfix'>
+  <view class='demandLi'>
+    <text class='fl fs30 fc-59'>服务时间</text>
+    <text class='fr fs30 fc-b3'>2019-1-1 12:23 ~ 2019-1-2 12:23</text>
+  </view>
+  <view class='demandLi'>
+    <text class='fl fs30 fc-59'>服务方式</text>
+    <text class='fr fs30 fc-b3'>线下服务</text>
+  </view>
+  <view class='demandLi'>
+    <text class='fl fs30 fc-59'>性别要求</text>
+    <text class='fr fs30 fc-b3'>不限</text>
+  </view>
+  <view class='last-demandLi clearfix'>
+    <view class='fl fs30 fc-59 last-demandLi-l'>需求详情</view>
+    <view class='last-demandLi-r fs26 fc-b3'>
+    这里展示用户所发布的需求详情，这里展示用 户所发布的需求详情，这里展示用户所发布的户所发布的需求详情，这里展示用户所发布的户所发布的需求详情，这里展示用户所发布的户所发布的需求详情，这里展示用户所发布的户所发布的需求详情，这里展示用户所发布的户所发布的需求详情，这里展示用户所发布的 需求详情，这里展示用户所发布的需求详情，
+    </view>
+  </view>
+</view>
+<!-- 需求 end -->
+
+
+<!-- 其他应邀者 start -->
+
+<view class='transactionRecord mt10 clearfix'>
+  <view class='transactionRecordLi'>
+    <text class='fl fs30 fc-59'>服务者</text>
+  </view>
+  <!-- 服务者 -->
+  <view class='serveUser'>
+    <view class='swiper-t'>
+      <view class='swiper-t-l'>
+        <image src="https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640"></image>
+      </view>
+      <view class='swiper-t-r'>
+      <view class='gprs'>9.5km</view>
+        <view class="swiper-userName">小明</view>
+        <view class="swiper-userInfo">
+          <view class="userAge">
+            <image src="../../static/images/index/index-12.png"></image>
+            <text>22</text>
+          </view>
+          <!-- 认证 -->
+          <view class='certification fl'>
+            <image src='../../static/images/index/index-16.png'></image>
+            <image src='../../static/images/index/index-16.png'></image>
+            <image src='../../static/images/index/index-16.png'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='swiper-m'>
+      <view class='swiper-m-li'>
+        <text class='fl'>技能等级</text>
+        <text class='fr'>中级4</text>
+      </view>
+      <view class='swiper-m-li'>
+        <text class='fl'>线上服务</text>
+        <text class='fr'>1000/次</text>
+      </view>
+      <view class='swiper-m-li'>
+        <text class='fl'>线下服务</text>
+        <text class='fr'>1000/次</text>
+      </view>
+      <view class='swiper-m-li'>
+        <text class='fl'>应邀时间</text>
+        <text class='fr'>2018-12-12 12：34</text>
+      </view>
+    </view>
+    <view class='swiper-b'></view>
+  </view>
+</view>
+<!-- 其他应邀者 end -->

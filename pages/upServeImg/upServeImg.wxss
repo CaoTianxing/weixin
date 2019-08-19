@@ -1,0 +1,66 @@
+.pageBox{
+  position: absolute;
+  width:100%;
+  padding-bottom: 100rpx;
+  
+}
+page {
+  background-color: #fff;
+}
+
+.title {
+  padding-top:58rpx;
+  text-align: center;
+  font-size: 34rpx;
+  color: #3775f5;
+  font-weight: bold;
+}
+
+.title text {
+  font-size: 34rpx;
+  font-weight: bold;
+}
+
+.title-btm {
+  margin-top: 30rpx;
+  margin-bottom: 106rpx;
+}
+
+/* 图片列表 */
+.ul{
+}
+.li{
+  float: left;
+  width: 150rpx;
+  height: 150rpx;
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+  position: relative;
+  z-index: 10
+}
+.li .img{
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+}
+
+.shutdown{
+  background-color: #fff;
+  position: absolute;
+  top: -20rpx;
+  right: -20rpx;
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 100
+}
+
+.addImg {
+  float: left;
+  width: 150rpx;
+  height: 150rpx;
+  border: 1px solid rgba(55, 117, 245, 1);
+  border-radius: 5px;
+}
+

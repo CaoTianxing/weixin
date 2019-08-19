@@ -1,0 +1,78 @@
+page {
+  background-color: #fff;
+}
+.pageBox{
+  position: absolute;
+  width:100%;
+  padding-bottom: 100rpx;
+  
+}
+
+.title {
+  margin: 116rpx auto 106rpx;
+  color: #3775f5;
+  width: 320rpx;
+}
+
+.title-t, .title-b {
+  display: block;
+  text-align: conter;
+  font-size: 34rpx;
+  font-weight: bold
+}
+
+.title-b{
+  margin-top: 30rpx;
+}
+
+
+/* 列表项 start */
+.ul{
+  padding: 0 30rpx;
+}
+.li{
+  height: 110rpx;
+  line-height: 110rpx;
+  border-bottom: 1px solid #f5f5f5;
+  overflow: hidden
+}
+.li-l{
+  font-size: 32rpx;
+  color: #595959
+}
+.li-subtitle{
+  font-size: 26rpx;
+  color: #CCCCCC
+}
+
+.li-edit{
+  margin-left: 140rpx;
+  height: 110rpx;
+  
+  line-height: 110rpx;
+  display: flex;
+  align-items: center;
+}
+
+.li-edit input{
+  margin-top: 7rpx;
+  float: left;
+  line-height: 110rpx;
+  position: relative;
+  text-align: right;
+}
+.check{
+  padding-left: 20rpx;
+}
+.radio-group{
+  height: 100%;
+}
+.radio{
+  /* line-height: 110rpx; */
+}
+radio{
+  transform:scale(0.7);
+}
+
+/* 列表项 end */
+

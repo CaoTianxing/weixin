@@ -1,0 +1,22 @@
+<view class="tabbar">
+  <view class='li' bindtap='hrefPage' data-index='1'>
+    <image class='li-img' src='/static/images/index/index-32.png'></image>
+    <view class='li-name'>首页</view>
+  </view>
+  <view class='li' bindtap='hrefPage' data-index='2'>
+    <image class='li-img' src='/static/images/index/index-28.png'></image>
+    <view class='li-name'>我的需求</view>
+  </view>
+  <view class='li' bindtap='hrefPage' data-index='3'>
+    <image class='li-img' src='/static/images/index/index-26.png'></image>
+    <view class='li-name'>发布</view>
+  </view>
+  <view class='li' bindtap='hrefPage' data-index='4'>
+    <image class='li-img' src='/static/images/index/index-30.png'></image>
+    <view class='li-name'>技能订单</view>
+  </view>
+  <view class='li' bindtap='hrefPage' data-index='5'>
+    <image class='li-img' src='/static/images/index/index-29.png'></image>
+    <view class='li-name'>我的</view>
+  </view>
+</view>

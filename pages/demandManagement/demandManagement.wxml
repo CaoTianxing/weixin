@@ -1,0 +1,97 @@
+<ctx-navbar back home text="需求列表"></ctx-navbar>
+<view class='pageBox' style="{{'top:' + navigationBarHeight}}">
+  <!-- 需求管理 start -->
+  <view class='filtrate'>
+    <van-tabs sticky active="{{ active }}" swipeable animated bind:change="onChange" color='#6747CE' tab-active-class='active'>
+      <van-tab title="全部">
+        <block wx:for="{{allDemandList}}" wx:key="{{index}}">
+          <view class='li' bindtap='hrefPage'>
+            <view class='li-l'>
+              <view class='shopping'>{{item.skillName}}</view>
+              <!-- 约定时间 -->
+              <view class='appointedTime'>
+                {{item.beginTime}}
+                <text>上午时段</text>
+              </view>
+              <!-- 应征者 -->
+              <!-- <view class='candidates'>已有{{item.serveUserNum}}位应征者</view> -->
+              <!-- 未完成退回诚意金 start -->
+              <view class='returnPicStatus'>
+                <!-- <image src="../../static/images/dadasdasdasdas.png" /> -->
+                <!-- <image src="../../static/images/addasdqwe123123123123123.png" /> -->
+                <text>退回剩余诚意金<text class='fc-5'>(￥50)</text>：还剩7天</text>
+                <!-- <text >剩余诚意金<text class='fc-5'>(￥50)</text></text> -->
+              </view>
+              <!-- 未完成退回诚意金 end -->
+            </view>
+            <view class='li-r'>
+              <!-- 订单状态 -->
+              <view class='status'>
+                <image class='' src="../../static/images/redx.png" />
+                {{item.serveStatus}}
+              </view>
+              <!-- <view class='expireDate'>{{item.serveExpiredTime}}天后过期</view> -->
+              <!-- 服务价格 -->
+              <view class='servePic'>
+                <image class='mr10' src="../../static/images/picicon.png" />
+                <text class='fc-59 fs28'>服务金：</text>
+                <text class='fc-5 fs28'>￥300</text>
+              </view>
+              <!-- 应征者头像 -->
+              <view class='candidatesImg'>
+                <block wx:for="{{item.serveUserImgs}}" wx:key="{{index}}">
+                  <image lazy-load src='{{item}}'></image>
+                </block>
+              </view>
+              <!-- 重新发布 -->
+              <!-- <view class='ComeBack fr'>重新发布</view> -->
+              <!-- <view class='ComeBack fr'>评价</view> -->
+              <!-- 订单申述中 -->
+              <!-- <view class='representationStatus'>订单申述中</view> -->
+            </view>
+            <!-- 下面所有的按钮 -->
+            <view style='clear: both'></view>
+            <view class='btns'>
+              <view>取消需求</view>
+              <view>发消息</view>
+              <view>打电话</view>
+              <view>打电话</view>
+              <view class='B2B2B2'>获取服务码</view>
+            </view>
+          </view>
+        </block>
+      </van-tab>
+      <van-tab title="待应邀">
+        <view class='li' bindtap='hrefPage' wx:for="{{dataList}}" wx:key="{{index}}">
+          <view class='li-t clearfix'>
+            <view class='li-l'>
+              <view class='shopping'>{{item.serveTitle}}</view>
+              <!-- 约定时间 -->
+              <view class='appointedTime'>
+                {{item.serveTime}}
+                <text>12:34</text>
+              </view>
+              <!-- 应征者 -->
+              <view class='candidates'>已有{{item.serveUserNum}}位应征者</view>
+            </view>
+            <view class='li-r'>
+              <view class='status'>{{item.serveStatus}}</view>
+              <view class='expireDate'>{{item.serveExpiredTime}}天后过期</view>
+              <!-- 应征者头像 -->
+              <view class='candidatesImg'>
+                <block wx:for="{{item.serveUserImgs}}" wx:key="{{index}}">
+                  <image lazy-load src='{{item}}'></image>
+                </block>
+              </view>
+            </view>
+          </view>
+          <view class='btns'>121212121212</view>
+        </view>
+      </van-tab>
+      <van-tab title="进行中">内容 2</van-tab>
+      <van-tab title="已成交">内容 3</van-tab>
+      <van-tab title="未完成">内容 4</van-tab>
+    </van-tabs>
+  </view>
+  <!-- 需求管理 end -->
+</view>

@@ -1,0 +1,38 @@
+<ctx-navbar back home text="身份认证"></ctx-navbar>
+<view class='pageBox' style="{{'top:' + navigationBarHeight}}">
+  <view class='li'>
+    <text class='li-title'>证件类型</text>
+    <radio-group class="radio-group" bindchange="radioChange">
+      <label class="radio" wx:for="{{fruit}}" wx:key="{{index}}">
+        <radio value="{{item.id}}" checked="{{item.checked}}" />
+        <text class='radioName'>{{item.name}}</text>
+      </label>
+    </radio-group>
+  </view>
+  <view class='items'>
+    <view class='items-l'>姓名</view>
+    <view class='items-r'>
+      <input type="text" bindinput='getName' placeholder="请填写" />
+    </view>
+  </view>
+  <view class='items'>
+    <view class='items-l'>证件号码</view>
+    <view class='items-r'>
+      <input type="text" bindinput='getNum' placeholder="请填写" />
+    </view>
+  </view>
+  <view class='cardZF'>
+    <view class='cardZF-t'>身份证正反面</view>
+    <view class='cardZF-b'>
+      <view class='cardZF-b-l fl'>
+        <image bindtap='positive' src="{{positiveImg == '' ? 'http://static.duodianwangluo.com/addimg.png': positiveImg}}" />
+        <text >正面</text>
+      </view>
+      <view class='cardZF-b-r fl'>
+        <image bindtap='negative' src="{{negativeImg == '' ? 'http://static.duodianwangluo.com/addimg.png': negativeImg}}" />
+        <text >反面</text>
+      </view>
+    </view>
+  </view>
+   <ctx-nextStep bindtap='save'>提交认证</ctx-nextStep>
+</view>

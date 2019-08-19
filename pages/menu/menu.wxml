@@ -1,0 +1,30 @@
+<ctx-navbar back home text="{{docTitle}}"></ctx-navbar>
+<view class='container'  style="{{'top:' + navigationBarHeight}}">
+  <view class='left'>
+    <scroll-view class='leftScroll' scroll-y>
+      <block wx:for="{{titleList}}" wx:key="titleList">
+        <view bindtap='addActive' data-index="{{index}}" data-id="{{'i' + index}}" class="l-li {{item.active == 1 ? 'l-active': ''}}">{{item.name}}</view>
+      </block>
+    </scroll-view>
+  </view>
+  <view class='right'>
+<!--     bindscroll="onGoodsScroll"-->
+    <scroll-view class='rightScroll' scroll-y scroll-into-view="{{toView}}" scroll-with-animation="true">
+      <!-- <block> -->
+      <view wx:for="{{titleList}}" wx:key="titleList" id="{{'i' + index}}" class='r-li'>
+        <text class='title'>{{item.name}}</text>
+        <view class='r-li-nav'>
+        <block wx:for="{{item.contentList}}" wx:key="{{index}}">
+          <view class='navList'>
+            <navigator url="{{url + '?id=' + item.id + '&img=' + item.logoUrl + '&title=' + item.name}}" data-id="{{item.id}}" hover-class='none'>
+              <image lazy-load src="{{ item.logoUrl == undefined ? 'https://img.artmkt.cn/1500835961825.jpg!352' : item.logoUrl}}"></image>
+              <text>{{item.name}}</text>
+            </navigator>
+          </view>
+        </block>
+        </view>
+      </view>
+      <!-- </block> -->
+    </scroll-view>
+  </view>
+</view>

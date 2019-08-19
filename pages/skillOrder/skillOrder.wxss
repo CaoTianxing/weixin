@@ -1,0 +1,122 @@
+.active {
+  color: #6747ce !important;
+}
+
+/* 用户资料 start */
+
+.username{
+  font-size: 32rpx;
+  color: #333333
+}
+.userImg {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+  float: left;
+}
+
+
+.userLi {
+  margin-top: 20rpx;
+  position: relative;
+  padding: 30rpx;
+  background-color: #fff;
+  overflow: hidden;
+}
+.userLi:first-child{
+  margin-top: 0;
+}
+
+.distance, .pic {
+  position: absolute;
+  right: 30rpx;
+  top: 32rpx;
+  font-size: 24rpx;
+  color: #bfbfbf;
+}
+
+.pic {
+  top: 120rpx;
+  font-size: 24rpx;
+  color: #808080;
+}
+
+.userInfo {
+  margin-left: 170rpx;
+}
+
+.userInfoIcon {
+  margin-top: 10rpx;
+}
+
+.userInfoIcon .sex {
+  position: relative;
+  float: left;
+}
+
+.userInfoIcon .sex text {
+  position: absolute;
+  height: 26rpx;
+  line-height: 26rpx;
+  left: 25rpx;
+  top: 0;
+  font-size: 22rpx;
+  color: #fff;
+}
+
+.userInfoIcon > image {
+  width: 26rpx;
+  height: 26rpx;
+  margin-left: 10rpx;
+}
+
+.sex > image {
+  width: 56rpx;
+  height: 26rpx;
+}
+
+.ServeContent {
+  height: 28rpx;
+  line-height: 28rpx;
+  color: #808080;
+  margin-top: 15rpx;
+}
+
+.ServeContent image {
+  width: 28rpx;
+  height: 24rpx;
+  margin-top: 4rpx;
+}
+
+.ServeContent text {
+  margin-left: 10rpx;
+  color: #808080;
+  font-size: 28rpx;
+}
+
+.ServeInfo {
+  margin-top: 18rpx;
+  font-size: 22rpx;
+  color: #737373;
+}
+
+.serveBtn {
+  overflow: hidden;
+  margin-top: 34rpx;
+}
+
+.serveBtn button {
+  width: 140rpx;
+  height: 52rpx;
+  text-align: center;
+  line-height: 52rpx;
+  padding: 0 !important;
+  border: 1px solid rgba(103, 71, 206, 1);
+  border-radius: 13px;
+  font-size: 22rpx;
+  color: rgba(103, 71, 206, 1);
+  margin-right: 25rpx;
+  float: right;
+}
+
+/* 用户资料 end */

@@ -1,0 +1,68 @@
+<ctx-navbar back home text="发布需求"></ctx-navbar>
+<view class='pageBox' style="{{'top:' + navigationBarHeight}}">
+    <!-- 诚意金 start -->
+  <view class='sincerity mt10'>
+    <view class='title'>诚意金
+      <image src='../../static/images/aboutTa/aboutTa-1.png'></image>
+    </view>
+  </view>
+  <view class='sincerityUl'>
+    <view wx:for="{{picList}}" wx:key="index" data-index='{{index}}' bindtap="addActive" class="sincerityLi {{item.active ? 'active' : ''}}">{{item.pic}}
+      <image wx:if='{{item.active == true}}' src='../../static/images/aboutTa/aboutTa-2.png'></image>
+    </view>
+  </view>
+  <!-- 诚意金 end -->
+  <view class='p1'>81%的用户选择该档位找到了满意的服务者</view>
+
+  <!-- 支付方式 start -->
+  <!-- <view class='pay mt20'>
+    <view class='pay-li'>
+      <view class='pay-li-title'>
+        <text class='fs32'>支付方式</text>
+      </view>
+    </view>
+    <view class='pay-li'  bindtap='playActive' data-title='balance'>
+      <view class='pay-li-l fl'>
+        <image src="http://116.62.168.126/jnzq/picioc.png"></image>
+      </view>
+      <view class='pay-li-r'>
+        <text>账户余额（￥00.00）</text>
+        <view class='check fr'>
+          <image  wx:if="{{balance}}" src='../../static/images/aboutTa/checked.png'></image>
+        </view>
+      </view>
+    </view>
+    <view class='pay-li'>
+      <view class='pay-li-l fl'>
+
+      </view>
+      <view class='pay-li-r'>
+        <text>支付宝</text>
+        <view class='check fr'>
+          <image src='../../static/images/aboutTa/checked.png'></image>
+        </view>
+      </view>
+    </view>
+
+    <view class='pay-li' bindtap='playActive'  data-title='weixin'>
+      <view class='pay-li-l fl'>
+        <image src="http://116.62.168.126/jnzq/weixinico.png"></image>
+      </view>
+      <view class='pay-li-r'>
+        <text>微信支付</text>
+        <view class='check fr'>
+          <image wx:if="{{weixin}}" src='../../static/images/aboutTa/checked.png'></image>
+        </view>
+      </view>
+    </view>
+
+  </view> -->
+  <!-- 支付方式 end -->
+  <!-- 段落 start -->
+  <view class='p2'>
+    订金担保到平台，未确认订单过期后可申请退回订金
+  </view>
+  <!-- 段落 end -->
+
+  <ctx-nextStep bindtap='play'>支付诚意金</ctx-nextStep>
+</view>

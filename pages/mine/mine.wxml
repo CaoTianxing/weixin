@@ -1,0 +1,94 @@
+<view class='pageBox'>
+  <van-tabs swipeable animated sticky bind:change="onChange" line-width='30' color='#6747CE' tab-active-class='active'>
+    <van-tab title="消息">
+      <view class='msg'>
+        <view class='msg-li'>
+          <view class='msg-li-l fl'>
+            <image src='https://cdn.ywart.com/yw/2019042810514295339d5ec28.jpg@800h_800w_0e_1l.src'></image>
+          </view>
+          <view class='msg-li-c'>
+            <view class='msgUserName '>小明</view>
+            <view class='msgUserSlog'>you  嗨皮  就  ok</view>
+            <view class='msgTime'>15:38</view>
+          </view>
+        </view>
+      </view>
+    </van-tab>
+    <van-tab title="技能">
+      <view class='ul'>
+        <view class='li'>
+          <!-- 上面 -->
+          <view class='li-t'>
+            <image src='../../static/images/index/index-3.png'></image>
+            <view class='li-t-r'>
+              <view class='li-t-r-l fl'>
+                <view class='fc-5 fs32'>逛商场</view>
+                <view class='fc-bf fs24 mt10'>2019/01/01 创建</view>
+              </view>
+              <view class='li-t-r-r fr'>
+                <view class='fc-008AFF fs28'>审核通过</view>
+                <view class='fc-bf fs24 mt10'>应约2次</view>
+              </view>
+            </view>
+          </view>
+          <!-- 中间 -->
+          <view class='li-c fs26'>
+            <view class='clearfix fc-333'>线上服务：
+              <text class='serPic fr fc-333'>25元一小时</text>
+            </view>
+            <view class='clearfix fc-333'>线下服务：
+              <text class='serPic fr fc-333'>25元一小时</text>
+            </view>
+            <view class='clearfix fc-333'>电话咨询：
+              <text class='serPic fr fc-333'>25元一小时</text>
+            </view>
+          </view>
+          <!-- 下面 -->
+          <view class='li-b'>
+            <van-switch custom-class='check' checked="{{ checked }}" bind:change="onChange" inactive-color="#BFBFBF" active-color="#4DD863" size="20px" />
+            <text class='start'>开始应邀</text>
+            <view class='editBtn fr'>编辑</view>
+            <view class='editBtn fr' style="display: none">完善</view>
+            <view class='editBtn fr mr20' style="border: 1px solid #FF4040;color: #FF4040;">删除</view>
+          </view>
+        </view>
+        <view class='li mt20'>
+          <!-- 上面 -->
+          <view class='li-t'>
+            <image src='../../static/images/index/index-3.png'></image>
+            <view class='li-t-r'>
+              <view class='li-t-r-l fl'>
+                <view class='fc-5 fs32'>逛商场</view>
+                <view class='fc-bf fs24 mt10'>2019/01/01 创建</view>
+              </view>
+              <view class='li-t-r-r fr'>
+                <view class='fc-008AFF fs28 fc-f2'>审核未通过</view>
+                <view class='fc-bf fs24 mt10'>应约2次</view>
+              </view>
+            </view>
+          </view>
+          <!-- 中间 -->
+          <view class='li-c fs26'>
+            <view class='clearfix fc-333'>线上服务：
+              <text class='serPic fr fc-333'>25元一小时</text>
+            </view>
+            <view class='clearfix fc-333'>线下服务：
+              <text class='serPic fr fc-333'>25元一小时</text>
+            </view>
+            <view class='clearfix fc-333'>电话咨询：
+              <text class='serPic fr fc-333'>25元一小时</text>
+            </view>
+          </view>
+          <!-- 下面 -->
+          <view class='li-b'>
+            <van-switch custom-class='check' checked="{{ checked }}" bind:change="onChange" inactive-color="#BFBFBF" active-color="#4DD863" size="20px" />
+            <text class='start'>开始应邀</text>
+            <view class='editBtn fr' style="display: none">编辑</view>
+            <view class='editBtn fr'>完善</view>
+            <view class='editBtn fr mr20' style="border: 1px solid #FF4040;color: #FF4040; display: none">删除</view>
+          </view>
+        </view>
+      </view>
+    </van-tab>
+  </van-tabs>
+</view>

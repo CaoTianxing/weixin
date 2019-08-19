@@ -1,0 +1,51 @@
+/* pages/login/login.wxss */
+.container{
+  position: absolute
+}
+button::after{
+
+border:none;
+
+}
+.alert{
+  width: 600rpx;
+  height: 300rpx;
+  background-color: #fff;
+  border-radius: 5rpx;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%)
+}
+
+.alert-b{
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.alert-b button{
+  height: 100%;
+  float: left;
+  border-radius: 0;
+  border-top: 1px solid #ccc;
+  width: 50%;
+  background-color: transparent;
+}
+.alert-b button:first-child{
+  
+  border-right: 1px solid #ccc;
+  color: rgb(7, 193, 96)
+  
+}
+
+
+
+
+.phone{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%)
+}

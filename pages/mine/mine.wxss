@@ -1,0 +1,116 @@
+.active {
+  color: #6747ce !important;
+}
+.pageBox{
+  position: absolute;
+}
+/* 消息start */
+.msg{
+  overflow: hidden;
+
+}
+.msg-li{
+  padding: 30rpx;
+  background-color: #fff;
+}
+.msg-li-l{
+  height: 70rpx;
+  width: 70rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.msg-li-l image{
+  height: 100%;
+  width: 100%;
+}
+
+.msg-li-c{
+  overflow: hidden;
+  margin-left: 105rpx;
+  position: relative;
+}
+
+.msgUserName{
+  font-size: 24rpx;
+  color: #404040;
+  font-weight: bold;
+}
+.msgUserSlog{
+  margin-top: 10rpx;
+  font-size: 20rpx;
+  color: #666666;
+}
+.msgTime{
+  position: absolute;
+  top: 50%;
+  font-size: 18rpx;
+  right: 0;
+  color:#999999;
+  transform: translateY(-50%);
+}
+/* 消息end */
+
+
+/* 技能列表start */
+.li{
+  overflow: hidden;
+  padding: 0 30rpx;
+   background-color: #fff;
+}
+.li-t{
+  padding: 24rpx 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+.li-t image{
+  width: 90rpx;
+  height: 90rpx;
+  float: left;
+}
+
+.li-t-r{
+  overflow: hidden;
+  margin-left: 110rpx;
+}
+
+.li-t-r-r{
+  text-align: right;
+}
+
+
+.li-c{
+  border-bottom: 1px solid #E6E6E6;
+}
+.li-c view{
+  margin: 15rpx 0;
+}
+
+
+.li-b{
+  height: 96rpx;
+  line-height: 96rpx;
+}
+.check{
+  float: left;
+  margin-top: 25rpx;
+  margin-right: 20rpx;
+}
+.start{
+  vertical-align: middle;
+  color: #999999;
+  font-size: 28rpx;
+}
+
+.editBtn{
+  width: 100rpx;
+  height: 44rpx;
+  line-height: 44rpx;
+  vertical-align: middle;
+  text-align: center;
+  border: 1px solid #BFBFBF;
+  color: #BFBFBF;
+  font-size: 24rpx;
+  border-radius: 6rpx;
+  margin-top: 22rpx;
+}
+
+/* 技能列表end */

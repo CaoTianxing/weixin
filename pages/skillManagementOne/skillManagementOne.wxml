@@ -1,0 +1,59 @@
+<ctx-navbar text="擅长技能"></ctx-navbar>
+
+<view class='pageBox' style="{{'top:' + navigationBarHeight}}">
+  <view class='jumpOver'>
+    <view class='jumpOver-in' bindtap='next'>跳过</view>
+  </view>
+  <view class='titie1'>欢迎技能者</view>
+  <view class='titie2'>请选择5个您擅长的领域</view>
+  <view class='titie3'>体验技能赚钱功能</view>
+  <!-- 热门服务 start -->
+  <view class='PopularService'>
+    <view class='hr'></view>
+    <view class='cont'>热门服务</view>
+  </view>
+  <!-- 热门服务 end -->
+  <!-- 列表项 start -->
+  <view class="ul1 {{hotIsExpand == true ? 'ExpandTrue' : ''}}">
+    <view class='li1' wx:for='{{hotLabelList}}' bindtap='addActive' data-box='hot' wx:key='{{index}}' data-index="{{index}}">
+      <view class="li1-in {{item.active ? 'border1' : ''}}">
+        {{item.name}}
+        <image wx:if="{{item.active == true}}" src='../../static/images/aboutTa/aboutTa-2.png'></image>
+      </view>
+    </view>
+  </view>
+  <!-- 列表项 end -->
+  <!-- 展开收起 -->
+  <view class='Expand' bindtap='hotIsExpandFun' wx:if='{{hotIsExpand != true}}'>
+    展开
+    <van-icon name="arrow-down" />
+  </view>
+  <view class='Expand' bindtap='hotIsExpandFun' wx:if='{{hotIsExpand != false}}'>
+    收起
+    <van-icon name="arrow-up" />
+  </view>
+<!-- 列表项 start -->
+<view class="ul2 {{isExpand == true ? 'ExpandTrue' : ''}}">
+  <view class='li1' wx:for='{{labelList}}' bindtap='addActive' wx:key='{{index}}' data-box='noHot' data-index="{{index}}">
+    <view class="li1-in {{item.active ? 'border1' : ''}}">
+      {{item.name}}
+      <image wx:if='{{item.active == true}}' src='../../static/images/aboutTa/aboutTa-2.png'></image>
+    </view>
+  </view>
+</view>
+<!-- 展开收起 -->
+<view class='Expand' bindtap='isExpandFun' wx:if='{{isExpand != true}}'>
+  展开
+  <van-icon name="arrow-down" />
+</view>
+<view class='Expand' bindtap='isExpandFun' wx:if='{{isExpand != false}}'>
+  收起
+  <van-icon name="arrow-up" />
+</view>
+<!-- 列表项 end -->
+</view>
+
+<!-- 页脚 -->
+<view class='footer'>
+  <button hover-class='none' bindtap='getData'>确认</button>
+</view>

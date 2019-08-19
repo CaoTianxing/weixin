@@ -1,0 +1,32 @@
+<ctx-navbar back home text="语音介绍"></ctx-navbar>
+<view class='pageBox' style="{{'top:' + navigationBarHeight}}">
+  <view class="title1">点击按钮</view>
+  <view class="title2">录制语音介绍</view>
+
+  <view class='voice clearfix'>
+    <view class='voice-l'>
+      <text wx:if='{{isVoiceTime != true}}' class='voiceTitle'>未录制</text>
+      <text wx:if='{{isVoiceTime == true}}' class='voiceTitle'>已录制</text>
+    </view>
+    <view class='voice-r' bindtap='playVoice'>
+      <view class='voice-r-in'>
+        <image src='../../static/images/voiceInfo/yyicon.png'></image>
+        <text>{{voiceTime}}"</text>
+      </view>
+      <view class='point' wx:if='{{isPoint == true}}'></view>
+    </view>
+  </view>
+
+  <view id="preloader_1" wx:if='{{isStart}}'>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+  </view>
+  <!-- 按钮录音部分 -->
+  <view class='lyBtn' bindlongtap="longTap" bindtouchstart="touchStart" bindtouchend="touchEnd">
+    <image src='../../static/images/voiceInfo/ly.png'></image>
+  </view>
+<ctx-nextStep bindtap='save'>保存</ctx-nextStep>
+</view>

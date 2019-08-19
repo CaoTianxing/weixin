@@ -1,0 +1,438 @@
+.pageBox {
+    padding-bottom: 100rpx;
+    position: absolute;
+}
+
+
+/* 轮播 start */
+
+.banner {
+    position: relative;
+}
+
+.bannerImg {
+    /* height: 360rpx; */
+    width: 100%;
+    /* border-bottom-left-radius: 34px;
+  border-bottom-right-radius: 34px; */
+    overflow: hidden;
+}
+
+.bannerImg image {
+    width: 100%;
+}
+
+swiper-item image {
+    width: 100%;
+}
+
+.search {
+    overflow: hidden;
+    position: absolute;
+    z-index: 10;
+    top: 20rpx;
+    right: 30rpx;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.search-l {
+    width: 164rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    padding-left: 26rpx;
+}
+
+.search-l image {
+    float: left;
+    width: 24rpx;
+    height: 30rpx;
+    margin-top: 18rpx;
+}
+
+.search-l text {
+    margin-left: 10rpx;
+    color: #fff;
+}
+
+.search-r {}
+
+.search-r input {
+    background-color: #fff;
+    border-radius: 50rpx;
+    padding-left: 62rpx;
+    height: 60rpx;
+    width: 500rpx;
+    display: block;
+}
+
+
+/* 轮播 end */
+
+
+/*nav start*/
+
+.nav {
+    position: relative;
+    z-index: 50;
+    margin: -110rpx auto 0;
+    width: 690rpx;
+    display: flex;
+    height: 124rpx;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.nav>view {
+    flex: 1;
+    font-size: 26rpx;
+    font-weight: bold;
+}
+
+.nav view>image {
+    width: 28rpx;
+    height: 28rpx;
+    margin-top: 6rpx;
+    margin-right: 10rpx;
+}
+
+
+/*nav end*/
+
+
+/* 筛选 start */
+
+.filtrate {
+    background-color: #fff;
+    margin-top: 14rpx;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, .1)
+}
+
+.clor262626 {
+    color: #6C4AFD
+}
+
+.clorBFBFBF {
+    color: #BFBFBF
+}
+
+.xia {
+    font-size: 30rpx;
+    margin-top: 10rpx;
+}
+
+.filtrateLi:nth-child(1) button {
+    color: #262626;
+}
+
+.filtrateLi {
+    font-size: 24rpx;
+    float: left;
+    height: 66rpx;
+    line-height: 66rpx;
+    text-align: center;
+    width: 25%;
+    color: rgba(191, 191, 191, 1);
+}
+
+.filtrateLi button {
+    font-size: 24rpx;
+    float: left;
+    height: 66rpx;
+    line-height: 66rpx;
+    text-align: center;
+    color: rgba(191, 191, 191, 1);
+}
+
+.filtrateLi button::after {
+    border: none;
+}
+
+
+/* 筛选 end */
+
+
+/* 筛选结果 start */
+
+.filtrateResultList {
+    overflow: hidden;
+}
+
+.filtrateResultLi {
+    padding: 5rpx 30rpx 0;
+    background-color: #fff;
+    margin-bottom: 20rpx;
+}
+
+
+/*.filtrateResultLi:first-child{*/
+
+
+/*  margin-top: 0;*/
+
+
+/*}*/
+
+.userImg {
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 50%;
+    float: left;
+}
+
+.filtrateResultLi-t {
+    position: relative;
+    padding: 10rpx 0;
+}
+
+.distance {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 24rpx;
+    color: #BFBFBF
+}
+
+.userInfo {
+    margin-left: 160rpx;
+    overflow: hidden;
+}
+
+
+/* .username{
+  display: inline-block
+} */
+
+.userInfoIcon {
+    overflow: hidden;
+    display: inline-block;
+}
+
+.userInfoIcon .sex {
+    position: relative;
+    float: left;
+    margin-top: 4rpx;
+}
+
+.userInfoIcon .sex text {
+    position: absolute;
+    height: 26rpx;
+    line-height: 26rpx;
+    left: 25rpx;
+    top: 0;
+    font-size: 22rpx;
+    color: #fff;
+}
+
+.userInfoIcon>image {
+    width: 26rpx;
+    height: 26rpx;
+    margin-left: 10rpx;
+}
+
+.sex>image {
+    width: 56rpx;
+    height: 26rpx;
+}
+
+.ServeContent {
+    height: 28rpx;
+    line-height: 28rpx;
+    color: #808080;
+    margin-top: 10rpx;
+}
+
+.ServeContent image {
+    width: 28rpx;
+    height: 24rpx;
+    margin-top: 4rpx;
+}
+
+.ServeContent text {}
+
+.ServeInfo {
+    margin-top: 10rpx;
+}
+
+.filtrateResultLi-c {
+    margin-top: 10rpx;
+    height: 220rpx;
+    overflow: hidden;
+    /* display: flex;
+    flex-wrap: nowrap; */
+}
+
+.scroll-x {
+    float: left;
+    overflow: hidden;
+    border: 1px solid red;
+}
+
+.filtrateResultLi-c image:first-child {
+    margin: 0;
+}
+
+.filtrateResultLi-c image {
+    width: 220rpx;
+    height: 220rpx;
+    margin-left: 15rpx;
+}
+
+.filtrateResultLi-b {
+    margin-top: 24rpx;
+    overflow: hidden;
+    padding-bottom: 20rpx;
+}
+
+.filtrateResultLi-b .filtrateTxt {
+    float: left;
+    margin-left: 4rpx;
+}
+
+.filtrateResultLi-b>image {
+    width: 24rpx;
+    height: 24rpx;
+    float: left;
+    margin-top: 8rpx;
+}
+
+.filtrateResultLi-b button {
+    width: 100rpx;
+    height: 40rpx;
+    line-height: 35rpx;
+    float: right;
+    border-radius: 20rpx;
+    position: relative;
+}
+
+.filtrateResultLi-b button image {
+    width: 100rpx;
+    position: absolute;
+    height: 40rpx;
+    left: 0;
+    top: 0;
+}
+
+
+/* 筛选结果 end */
+
+
+/* 高级筛选菜单  start */
+
+.animation-element {
+    position: fixed;
+    overflow: hidden;
+    height: 100%;
+    width: 500rpx;
+    z-index: 100;
+    right: -300px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #F2F2F2;
+}
+
+.menuTop {
+    padding: 30rpx;
+    background-color: #fff;
+}
+
+.menuTop>image {
+    width: 31rpx;
+    height: 31rpx;
+}
+
+.genderTitle {
+    color: #999999;
+    font-size: 28rpx;
+}
+
+.genderList {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.genderLi {
+    padding: 0 20rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+    color: #999999;
+    background-color: #F2F2F2;
+    margin: 10rpx 12rpx 10rpx 0;
+    font-size: 20rpx;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.genderLiAct {
+    color: #fff;
+    background-color: #7450E8;
+}
+
+.menuTop>text {
+    font-size: 34rpx;
+    margin-left: 20rpx;
+    color: #7450E8;
+}
+
+.menu-hr {
+    border-top: 1px solid #F2F2F2;
+    width: 100%;
+    margin: 20rpx 0;
+    margin-left: 30rpx;
+}
+
+.menu-content-list {
+    margin: 20rpx 0;
+    border-radius: 10px;
+    padding: 30rpx;
+    background-color: #fff;
+}
+
+.btn {
+    padding: 20rpx;
+    position: absolute;
+    bottom: 120rpx;
+    left: 0;
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+}
+
+.btn view {
+    flex: 1;
+    width: 207rpx;
+    line-height: 61rpx;
+    height: 61rpx;
+    border-radius: 30px;
+    font-size: 20rpx;
+    text-align: center
+}
+
+.firstBtn {
+    margin-right: 30rpx;
+    color: #7352FF;
+    border: 1px solid#7352FF!important;
+}
+
+.lastBtn {
+    color: #fff;
+    background: linear-gradient(90deg, rgba(115, 82, 255, 1), rgba(96, 59, 255, 1));
+}
+
+
+/* 筛选菜单  end */
+
+.mask {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, .8)
+}

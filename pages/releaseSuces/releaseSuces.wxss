@@ -1,0 +1,122 @@
+page {
+  background-color: #fff;
+}
+
+.title {
+  text-align: center;
+  margin-top: 60rpx;
+}
+
+.title image {
+  width: 278rpx;
+  height: 84rpx;
+}
+
+.userImg {
+  position: relative;
+  width: 140rpx;
+  height: 140rpx;
+  margin: 46rpx auto 26rpx;
+}
+
+.coverImg {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+}
+
+.success {
+  position: absolute;
+  bottom: -5rpx;
+  right: -5rpx;
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+}
+
+.gprs {
+  text-align: center;
+  font-size: 26rpx;
+  color: #404040;
+}
+
+.gprs image {
+  margin-right: 10rpx;
+  width: 24rpx;
+  height: 28rpx;
+}
+
+.p {
+  text-align: center;
+  display: block;
+  margin-top: 60rpx;
+  font-size: 26rpx;
+  color: #333;
+}
+
+.num {
+  text-align: center;
+  margin-top: 60rpx;
+}
+
+.num-l {
+  font-size: 54rpx;
+  color: #ff5b5b;
+}
+
+.num-r {
+  font-size: 30rpx;
+  color: #333;
+}
+
+
+.allUser-li{
+  box-sizing: border-box;
+  float: left;
+  width: 25%;
+  text-align: center;
+  margin-top: 60rpx;
+  
+}
+.allUser-li-t {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 14rpx;
+}
+
+.allUser-li-icon {
+  width: 24rpx;
+  height: 28rpx;
+  margin-right: 10rpx;
+}
+
+.allUser-li-txt {
+  font-size: 26rpx;
+  color: #404040
+}
+
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%
+
+}
+.footer button{
+  width: 100%;
+  height: 100rpx;
+  color: #fff;
+  line-height: 100rpx;
+  background-color: #6747CE;
+  font-size: 32rpx;
+  border-radius: 0;
+  
+}
+
+.footer > button::after {
+  outline: none;
+  border-radius: 0!important
+}
+

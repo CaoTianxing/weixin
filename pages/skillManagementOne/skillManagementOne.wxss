@@ -1,0 +1,145 @@
+page {
+  background-color: #fff;
+  padding-bottom: 100rpx;
+}
+.pageBox{
+  position: absolute;
+  padding-bottom: 100rpx;
+}
+
+/* 跳过 */
+.jumpOver{
+margin: 30rpx 0 0;
+  overflow: hidden;
+}
+.jumpOver-in {
+  width: 96rpx;
+  height: 48rpx;
+  line-height: 48rpx;
+  border: 1px solid rgba(116, 80, 232, 1);
+  border-radius: 3px;
+  float: right;
+  margin-right: 20rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: rgba(116, 80, 232, 1);
+}
+
+.titie1, .titie2, .titie3 {
+  margin-top: 40rpx;
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+}
+
+.titie1 {
+  margin-top: 0rpx;
+}
+
+.titie2 {
+}
+
+.titie3 {
+}
+
+.PopularService {
+  margin-top: 70rpx;
+  position: relative;
+  height: 60rpx;
+}
+
+.hr {
+  height: 30rpx;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.border1 {
+  border: 1px solid #6747ce;
+  color: #6747ce !important;
+}
+
+.cont {
+  font-size: 28rpx;
+  color: #585858;
+  height: 60rpx;
+  line-height: 60rpx;
+  width: 200rpx;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+}
+
+.ul1 {
+  overflow: hidden;
+  height: 300rpx;
+}
+.ul2 {
+  overflow: hidden;
+  height: 300rpx;
+}
+.li1 {
+  float: left;
+  width: 25%;
+  margin: 10rpx 0;
+}
+
+.li1-in {
+  width: 150rpx;
+  margin: 0 auto;
+  position: relative;
+  height: 60rpx;
+  line-height: 60rpx;
+  color: #585858;
+  font-size: 28rpx;
+  background-color: #f3f3f3;
+  text-align: center;
+  border-radius: 6rpx;
+}
+
+.li1-in image {
+  position: absolute;
+  height: 30rpx;
+  width: 30rpx;
+  top: 0;
+  right: 0;
+}
+
+/* 展开样式 */
+
+.ExpandTrue {
+  height: 100% !important;
+}
+
+.Expand {
+  margin: 30rpx 0;
+  text-align: center;
+  font-size: 28rpx;
+  color: #585858;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer button {
+  width: 100%;
+  height: 100rpx;
+  color: #fff;
+  line-height: 100rpx;
+  background-color: #6747ce;
+  font-size: 32rpx;
+  border-radius: 0;
+}
+
+.footer > button::after {
+  outline: none;
+  border-radius: 0 !important;
+}

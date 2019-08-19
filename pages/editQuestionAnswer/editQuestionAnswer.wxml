@@ -1,0 +1,30 @@
+<ctx-navbar back home text="问答编辑"></ctx-navbar>
+<view class='pageBox' style="{{'top:' + navigationBarHeight}}">
+  <view class="ul">
+    <view class='li'>
+      <image src='../../static/images/index/index-3.png'></image>
+      <view class='li-r'>
+        <view class='fc-5 fs32'>陪玩游戏</view>
+      </view>
+    </view>
+  </view>
+  <!-- 列表 start -->
+  <view class='itemLi'>
+    <view class='itemLi-t'>
+      <view class='itemLi-t-l'>问题</view>
+      
+    </view>
+    <view class='itemLi-b'><input placeholder='请输入问题' placeholder-class='fc-b3'></input></view>
+  </view>
+  <view class='itemLi mt10'>
+    <view class='itemLi-t'>
+      <view class='itemLi-t-l'>答案</view>
+      
+    </view>
+    <view class='itemLi-b'><input placeholder='请输入答案' placeholder-class='fc-b3'></input></view>
+  </view>
+  <!-- 列表 end -->
+
+  <!-- 页脚 -->
+<ctx-nextStep>保存</ctx-nextStep>
+</view>

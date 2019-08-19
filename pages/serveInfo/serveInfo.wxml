@@ -1,0 +1,343 @@
+<ctx-navbar back home text="技能详情"></ctx-navbar>
+<view class='pageBox' style="{{'top:' + navigationBarHeight}}">
+  <!-- 顶部 -->
+  <view class='header'>
+    <!-- 用户信息盒子 start -->
+    <view class='header-userBox'>
+      <view class='header-userImg fl'>
+        <image src="{{serviceDetails.userMsg.headimg}}"></image>
+      </view>
+      <view class='header-user'>
+        <view class='header-user-name'>{{serviceDetails.userMsg.name}}</view>
+        <view class='serveIcon'>
+          <image src='../../static/images/index/index-13.png'></image>
+          <image src='../../static/images/index/index-14.png'></image>
+          <image src='../../static/images/index/index-15.png'></image>
+          <image src='../../static/images/index/index-16.png'></image>
+        </view>
+        <view class='attention'>
+          <button>关注</button>
+        </view>
+      </view>
+    </view>
+    <view class="serveNum">
+      <view class='serveNum-li'>
+        <text>粉丝</text>
+        <text>500</text>
+      </view>
+      <view class='serveNum-li'>
+        <text>接单</text>
+        <text>500</text>
+      </view>
+      <view class='serveNum-li'>
+        <text>关注</text>
+        <text>500</text>
+      </view>
+      <view class='serveNum-li'>
+        <text>好评</text>
+        <text>10%</text>
+      </view>
+      <view class='serveNum-li'>
+        <text>动态</text>
+        <text>500</text>
+      </view>
+    </view>
+  </view>
+  <!-- 用户信息盒子 end -->
+  <!-- 其他服务 start -->
+  <view class='other-service'>
+    <view class='scrol-wrap-title'>其他服务</view>
+    <view class="other-service-li">
+      <!-- 头部标题 -->
+      <view class="other-service-title">
+        <image src="http://static.duodianwangluo.com/Fj9Bf86gd9lok19LtCX6nUT0SFo8" />
+        <text>男士SPA</text>
+      </view>
+      <!-- 内容部分 start -->
+      <view class='other-service-cont'>
+        <!-- 服务方式 start -->
+        <view class='serveManner'>
+          <text class='h2'>服务方式</text>
+          <view class='serveLabel'>
+            <text>线上服务100元/时</text>
+            <text>线下服务100元/时</text>
+            <text>线下服务150元/时</text>
+          </view>
+        </view>
+        <!-- 服务方式 end -->
+        <!-- 服务时间 start -->
+        <view class='serveTime'>
+          <text class='h2'>服务时间</text>
+          <view class='serveCont'>
+            12.00.00-14.00.00
+          </view>
+        </view>
+        <!-- 服务时间 end -->
+      </view>
+    </view>
+  </view>
+  <!-- 其他服务 end -->
+  <!-- 荣誉资质 start -->
+  <view class='scrol-wrap'>
+    <view class='scrol-wrap-title'>荣誉资质</view>
+    <scroll-view scroll-x>
+      <view class="scrol-wrap-content">
+        <view>
+          <view class="scrol-wrap-content-title">PS高级证书</view>
+          <image src="http://static.duodianwangluo.com/Fj9Bf86gd9lok19LtCX6nUT0SFo8"></image>
+          <view class='scrol-wrap-content-r'>
+            <view class='scrol-wrap-content-r-t ellipsis-3'>
+              这里是对荣誉证书的介绍，最多显示40字。 这里是对荣誉证书的介绍，最多显示40字。 这里这里是对荣誉证书的介绍，最多显示40字。 这里是对荣誉证书的介绍，最多显示40字。 这里
+            </view>
+            <view class='scrol-wrap-content-r-b'>
+              <text class='fl'>Adobe公司</text>
+              <text class='fr'>2019/05</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <!-- 荣誉资质 end -->
+  <!-- 教育经历 start -->
+  <view class='serveManner'>
+    <text class='h1'>教育经历</text>
+    <view class='educationList'>
+      <view class='school'>郑州科技学院</view>
+      <view class='schoolDate'>2011.9.1-2016.6.1</view>
+      <view style="clear: both"></view>
+      <view class='Education clearfix'>
+        大专
+        <text>计算机应用技术</text>
+      </view>
+    </view>
+  </view>
+  <!-- 教育经历 end -->
+  <!-- 工作经历 start -->
+  <view class='serveManner'>
+    <text class='h1'>工作经历</text>
+    <view class='educationList'>
+      <view class='school'>一乐概念模特公司</view>
+      <view class='schoolDate'>2011.9.1-2016.6.1</view>
+      <view style="clear: both"></view>
+      <view class='Education clearfix'>
+        技术部
+        <text>web前端</text>
+      </view>
+    </view>
+  </view>
+  <!-- 工作经历 end -->
+  <!-- 服务内容 start -->
+  <view class='serveManner'>
+    <text class='h1'>服务内容</text>
+    <view class='serveCont'>脸部护理，肩颈舒缓，脊椎保养，全身淋巴排毒 脸部护理，肩颈舒缓，脊椎保养，全身淋巴排毒</view>
+  </view>
+  <!-- 服务内容 end -->
+  <!-- 服务介绍 start -->
+  <view class='serveManner'>
+    <text class='h1'>服务介绍</text>
+    <view class='serveCont'>脸部护理，肩颈舒缓，脊椎保养，全身淋巴排毒 脸部护理，肩颈舒缓，脊椎保养，全身淋巴排毒</view>
+  </view>
+  <!-- 服务介绍 end -->
+  <!-- 我的优势 start -->
+  <view class='serveManner'>
+    <text class='h1'>服务介绍</text>
+    <view class='serveCont'>脸部护理，肩颈舒缓，脊椎保养，全身淋巴排毒 脸部护理，肩颈舒缓，脊椎保养，全身淋巴排毒</view>
+  </view>
+  <!-- 我的优势 end -->
+  <!-- 视频介绍 start -->
+  <view class='serveManner mt10'>
+    <text class='h1'>视频介绍</text>
+    <view class='videoBox'>
+      <video id="myVideo" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" controls></video>
+    </view>
+  </view>
+  <!-- 视频介绍 end -->
+  <!-- 图片介绍 start -->
+  <view class='serveManner'>
+    <text class='h1'>图片介绍</text>
+    <navigator class='allServeImg'>
+      更多
+      <van-icon class='righticon' name="arrow" />
+    </navigator>
+    <view class='serveImgBox'>
+      <image src='http://img3.imgtn.bdimg.com/it/u=1241134888,3475164417&fm=26&gp=0.jpg'></image>
+      <image src='http://img3.imgtn.bdimg.com/it/u=1241134888,3475164417&fm=26&gp=0.jpg'></image>
+      <image src='http://img3.imgtn.bdimg.com/it/u=1241134888,3475164417&fm=26&gp=0.jpg'></image>
+    </view>
+  </view>
+  <!-- 图片介绍 end -->
+  <!-- 其他服务 start -->
+  <view class='serveManner mt10'>
+    <text class='h1'>其他服务</text>
+    <navigator class='allServeImg'>
+      更多
+      <van-icon class='righticon' name="arrow" />
+    </navigator>
+    <view class='nav'>
+      <view class='nav-ul'>
+        <view class='nav-li'>
+          <navigator hover-class="none">
+            <image src='../../static/images/index/index-3.png'></image>
+            <view class='navtext'>看电影</view>
+          </navigator>
+        </view>
+        <view class='nav-li'>
+          <navigator hover-class="none">
+            <image src='../../static/images/index/index-4.png'></image>
+            <view class='navtext'>享美食</view>
+          </navigator>
+        </view>
+        <view class='nav-li'>
+          <navigator hover-class="none">
+            <image src='../../static/images/index/index-5.png'></image>
+            <view class='navtext'>陪打机</view>
+          </navigator>
+        </view>
+        <view class='nav-li'>
+          <navigator hover-class="none">
+            <image src='../../static/images/index/index-7-1.png'></image>
+            <view class='navtext'>逛商场</view>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 其他服务 end -->
+  <!-- 专业问答 start -->
+  <view class='serveManner mt10'>
+    <text class='h1'>专业问答</text>
+    <view class='educationList'>
+      <view class='school ellipsis'>你对吃遍天下美食有感想吗</view>
+      <view class='schoolDate ellipsis-3'>只要是自己喜欢吃的，都可以称之为美食只要是自己喜欢吃的，</view>
+    </view>
+  </view>
+  <!-- 专业问答 end -->
+  <!-- 评价 start -->
+  <view class='serveManner' style='padding-bottom: 0'>
+    <text class='h1'>评价 (10)</text>
+    <view class='evaluate'>
+      <view class='evaluate-l'>
+        <text class='leftGrade'>综合评分</text>
+        <text class='leftGrade FF4040 fen'>5.0</text>
+        <!-- 左边五角星 -->
+        <view class='evaluationBox'>
+          <view class='evaluationRes'>
+            <image wx:if='{{evaluateNum >= 1}}' src='../../static/images/serveInfo/info1.png'></image>
+            <image wx:if='{{evaluateNum >= 2}}' src='../../static/images/serveInfo/info1.png'></image>
+            <image wx:if='{{evaluateNum >= 3}}' src='../../static/images/serveInfo/info1.png'></image>
+            <image wx:if='{{evaluateNum >= 4}}' src='../../static/images/serveInfo/info1.png'></image>
+            <image wx:if='{{evaluateNum >= 5}}' src='../../static/images/serveInfo/info1.png'></image>
+          </view>
+          <view class='evaluationRes'>
+            <image src='../../static/images/serveInfo/serveInfo-2.png'></image>
+            <image src='../../static/images/serveInfo/serveInfo-2.png'></image>
+            <image src='../../static/images/serveInfo/serveInfo-2.png'></image>
+            <image src='../../static/images/serveInfo/serveInfo-2.png'></image>
+            <image src='../../static/images/serveInfo/serveInfo-2.png'></image>
+          </view>
+        </view>
+      </view>
+      <view class='evaluate-r'>
+        <!-- 精准 -->
+        <view class='evaluateItem'>
+          <text class='evaluateItemTxt'>精准：</text>
+          <view class='evaluateItemImgBox'>
+            <view class='evaluateItembg'>
+              <image src='../../static/images/serveInfo/serveInfo-2.png'></image>
+              <image src='../../static/images/serveInfo/serveInfo-2.png'></image>
+              <image src='../../static/images/serveInfo/serveInfo-2.png'></image>
+              <image src='../../static/images/serveInfo/serveInfo-2.png'></image>
+              <image src='../../static/images/serveInfo/serveInfo-2.png'></image>
+            </view>
+            <view class='evaluateItemImg'>
+              <image wx:if='{{evaluateNum >= 1}}' src='../../static/images/serveInfo/info1.png'></image>
+              <image wx:if='{{evaluateNum >= 2}}' src='../../static/images/serveInfo/info1.png'></image>
+              <image wx:if='{{evaluateNum >= 3}}' src='../../static/images/serveInfo/info1.png'></image>
+              <image wx:if='{{evaluateNum >= 4}}' src='../../static/images/serveInfo/info1.png'></image>
+              <image wx:if='{{evaluateNum >= 5}}' src='../../static/images/serveInfo/info1.png'></image>
+            </view>
+          </view>
+          <text class='FF4040 evaluateItemNum'>5</text>
+        </view>
+        <!-- 服务 -->
+        <view class='evaluateItem'>
+          <text class='evaluateItemTxt'>服务：</text>
+          <view class='evaluateItemImgBox'>
+            <view class='evaluateItembg'>
+              <image src='../../static/images/serveInfo/serveInfo-2.png'></image>
+              <image src='../../static/images/serveInfo/serveInfo-2.png'></image>
+              <image src='../../static/images/serveInfo/serveInfo-2.png'></image>
+              <image src='../../static/images/serveInfo/serveInfo-2.png'></image>
+              <image src='../../static/images/serveInfo/serveInfo-2.png'></image>
+            </view>
+            <view class='evaluateItemImg'>
+              <image wx:if='{{evaluateNum >= 1}}' src='../../static/images/serveInfo/serveInfo-1.png'></image>
+              <image wx:if='{{evaluateNum >= 2}}' src='../../static/images/serveInfo/serveInfo-1.png'></image>
+              <image wx:if='{{evaluateNum >= 3}}' src='../../static/images/serveInfo/serveInfo-1.png'></image>
+              <image wx:if='{{evaluateNum >= 4}}' src='../../static/images/serveInfo/serveInfo-1.png'></image>
+              <image wx:if='{{evaluateNum >= 5}}' src='../../static/images/serveInfo/serveInfo-1.png'></image>
+            </view>
+          </view>
+          <text class='FF4040 evaluateItemNum'>5</text>
+        </view>
+        <!-- 态度 -->
+        <view class='evaluateItem'>
+          <text class='evaluateItemTxt'>态度：</text>
+          <view class='evaluateItemImgBox'>
+            <view class='evaluateItembg'>
+              <image src='../../static/images/serveInfo/serveInfo-2.png'></image>
+              <image src='../../static/images/serveInfo/serveInfo-2.png'></image>
+              <image src='../../static/images/serveInfo/serveInfo-2.png'></image>
+              <image src='../../static/images/serveInfo/serveInfo-2.png'></image>
+              <image src='../../static/images/serveInfo/serveInfo-2.png'></image>
+            </view>
+            <view class='evaluateItemImg'>
+              <image wx:if='{{evaluateNum >= 1}}' src='../../static/images/serveInfo/serveInfo-1.png'></image>
+              <image wx:if='{{evaluateNum >= 2}}' src='../../static/images/serveInfo/serveInfo-1.png'></image>
+              <image wx:if='{{evaluateNum >= 3}}' src='../../static/images/serveInfo/serveInfo-1.png'></image>
+              <image wx:if='{{evaluateNum >= 4}}' src='../../static/images/serveInfo/serveInfo-1.png'></image>
+              <image wx:if='{{evaluateNum >= 5}}' src='../../static/images/serveInfo/serveInfo-1.png'></image>
+            </view>
+          </view>
+          <text class='FF4040 evaluateItemNum'>5</text>
+        </view>
+      </view>
+    </view>
+    <!-- 评价用户以及内容 -->
+    <view>
+      <view class='evaluateuserBox clearfix'>
+        <text class='evaluateData'>2018-08-08</text>
+        <image class='evaluateuserImg' src='http://img3.imgtn.bdimg.com/it/u=1241134888,3475164417&fm=26&gp=0.jpg'></image>
+        <view class='evaluateuserInfo'>
+          <!-- 用户名 -->
+          <view>大帅哥1</view>
+          <view class='evaluateuserInfoIcon'>
+            <view class='evaluatesex'>
+              <image src='../../static/images/index/index-12.png'></image>
+              <text>22</text>
+            </view>
+          </view>
+        </view>
+        <view class='evaluationCont ellipsis-2'>
+          1月10日，小米在北京发布999元起售的Redmi Note 7手机，这是其独立新品牌Redmi的首款新机。雷军在发布会现场放出狠话“生死看淡、不服就干”。
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 评价 end -->
+  <!-- 页面底部 start -->
+  <cover-view class='footer'>
+    <cover-view class='footer-l'>
+      <cover-view>中山二路68号商务楼</cover-view>
+      <cover-view class='gps'>
+        <cover-image src='../../static/images/index/index-22.png'></cover-image>
+        <cover-view class='fl'>距离你9.5km</cover-view>
+      </cover-view>
+    </cover-view>
+    <cover-view class='footer-r' bindtap='herfPage'>
+      <cover-image src='../../static/images/index/index-18.png'></cover-image>
+    </cover-view>
+  </cover-view>
+  <!-- 页面底部 end -->
+</view>

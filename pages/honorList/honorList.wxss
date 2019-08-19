@@ -1,0 +1,127 @@
+
+
+
+.itemLi{
+  background-color: #fff;
+}
+.itemLi-t {
+  height: 100rpx;
+  line-height: 100rpx;
+  padding: 0 30rpx;
+  color: #404040;
+  font-weight: bold
+}
+.itemLi-b{
+  overflow: hidden;
+  padding: 0 30rpx;
+}
+.itemLi-t {
+  font-size: 30rpx;
+  color: #595959;
+  position: relative
+}
+
+
+.addBox{
+  overflow: hidden;
+  height:92rpx;
+  line-height:92rpx;
+  float: right;
+  font-size: 30rpx;
+  color: #3775F5;
+  margin-right: 30rpx;
+}
+.add{
+  width: 32rpx;
+  float: left;
+  height: 32rpx;
+  margin-top: 30rpx;
+  margin-right: 10rpx;
+}
+
+.itemLi-t-r{
+  position: absolute;
+  top: 50%;
+  vertical-align: middle;
+  right: 30rpx;
+  transform: translateY(-50%)
+}
+.itemLi-t-r image:first-child{
+  width: 28rpx;
+  vertical-align: middle;
+  height: 26rpx;
+}
+
+.itemLi-t-r image:last-child{
+  margin-left: 20rpx;
+  width: 26rpx;
+  vertical-align: middle;
+  height: 26rpx;
+}
+
+.itemLi-b {
+  color: #B3B3B3;
+  font-size: 24rpx;
+  padding-bottom: 30rpx;
+  position: relative;
+}
+.itemLi-b-l{
+  width: 130rpx;
+  height: 130rpx;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.itemLi-b-l image {
+  width: 100%;
+  height: 100%;
+}
+.itemLi-b-r{
+  margin-left: 150rpx;
+  font-size: 26rpx;
+  color: #595959;
+}
+.firsAndDate{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.firsAndDate-l,.firsAndDate-r{
+  position: absolute;
+  font-size: 18rpx;
+  color: #595959; 
+}
+.firsAndDate-l{
+  left: 150rpx;
+  bottom: 20rpx;
+
+}
+.firsAndDate-r{
+  right: 60rpx;
+  bottom: 20rpx;
+
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%
+
+}
+.footer button{
+  width: 100%;
+  height: 100rpx;
+  color: #fff;
+  line-height: 100rpx;
+  background-color: #6747CE;
+  font-size: 32rpx;
+  border-radius: 0;
+  
+}
+
+.footer > button::after {
+  outline: none;
+  border-radius: 0!important
+}
+
+
+

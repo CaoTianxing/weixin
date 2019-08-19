@@ -1,0 +1,38 @@
+<ctx-navbar back home text="荣誉资质"></ctx-navbar>
+<view class='pageBox' style="{{'top:' + navigationBarHeight}}">
+  <!-- 列表 start -->
+  <block wx:for="{{honorList}}" wx:key="{{index}}">
+    <view class='itemLi'>
+      <view class='itemLi-t'>
+        <view class='itemLi-t-l'>{{item.honorName}}</view>
+        <view class='itemLi-t-r'>
+          <image data-id='{{item.id}}' bindtap='upItem' src='../../static/images/aboutTa/editor.png'></image>
+          <image data-id='{{item.id}}' bindtap='removeItem' src='../../static/images/upimg/shutdown.png'></image>
+        </view>
+      </view>
+      <view class='itemLi-b'>
+        <view class='itemLi-b-l fl'>
+          <image src='{{item.honorImage}}' />
+        </view>
+        <view class='itemLi-b-r'>
+          <view class="ellipsis-3">
+            {{item.honorDetail}}
+          </view>
+        </view>
+        <view class='firsAndDate'>
+          <text class="firsAndDate-l">{{item.issuingAuthority}}</text>
+          <text class="firsAndDate-r">{{item.acquisitionTime}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+  <view class='addBox'>
+    <navigator url='/pages/editHonor/editHonor' hover-class='none'>
+      <image class='add' src='../../static/images/addlan.png'></image>
+      添加资质
+    </navigator>
+  </view>
+  <!-- 列表 end -->
+  <!-- 页脚 -->
+  <ctx-nextStep bindtap='save'>保存</ctx-nextStep>
+</view>

@@ -1,0 +1,52 @@
+<view class='pageBox'>
+  <!-- 用户 start -->
+  <view class='user'>
+    <image class='userImg' src='http://img3.imgtn.bdimg.com/it/u=1241134888,3475164417&fm=26&gp=0.jpg'></image>
+    <view class='userInfo'>
+      <view class='userInfo-t'>
+        <text>大帅哥</text>
+        <!-- 年龄 -->
+        <view class='age'>
+          <image src='../../static/images/index/index-12.png'></image>
+          <text>22</text>
+        </view>
+        <view class='usericon'>
+          <image src='../../static/images/index/index-13.png'></image>
+          <image src='../../static/images/index/index-14.png'></image>
+          <image src='../../static/images/index/index-15.png'></image>
+          <image src='../../static/images/index/index-16.png'></image>
+        </view>
+      </view>
+      <view class='userInfo-c'>
+        <image src='../../static/images/index/index-17.png'></image>
+        <text>需求：陪聊天</text>
+      </view>
+      <view class='userInfo-b'>
+        距离你9.5km
+      </view>
+    </view>
+  </view>
+  <!-- 用户 end -->
+  <!-- 诚意金 start -->
+  <view class='sincerity mt10'>
+    <view class='title'>诚意金
+      <image src='../../static/images/aboutTa/aboutTa-1.png'></image>
+    </view>
+  </view>
+  <view class='sincerityUl'>
+    <view wx:for="{{picList}}" wx:key="index" data-index='{{index}}' bindtap="addActive" class="sincerityLi {{item.active ? 'active' : ''}}">{{item.pic}}
+      <image wx:if='{{item.active == true}}' src='../../static/images/aboutTa/aboutTa-2.png'></image>
+    </view>
+  </view>
+  <!-- 诚意金 end -->
+  <view class='p'>81%的用户选择该档位找到了满意的服务者</view>
+
+  <!-- 页脚按钮 start -->
+  <view class='footer'>
+    <view class='foot-p'>
+      发布成功，即为同意《技能赚钱服务协议》
+    </view>
+    <button hover-class='none' bindtap='hrefPage'>下一步</button>
+  </view>
+  <!-- 页脚按钮 end -->
+</view>

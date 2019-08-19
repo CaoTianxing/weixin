@@ -1,0 +1,41 @@
+<ctx-navbar back home text="视频介绍"></ctx-navbar>
+<view class='pageBox' style="{{'top:' + navigationBarHeight}}">
+    <view class="title">
+        <view>您可以录制一段至少
+            <text class="baseCor">8</text>
+            秒的视频
+        </view>
+        <view class="title-btm">介绍您的服务或个人服务</view>
+    </view>
+    <!-- <view class='coverImg'>
+        <image src='' />
+    </view> -->
+    <view class="videoBox">
+    <!-- <image class='viewCoverImg' src='http://photocdn.sohu.com/20111207/Img328215620.jpg' /> -->
+        <video
+            id="myVideo"
+            bindfullscreenchange='isFull'
+            enable-progress-gesture
+            enable-play-gesture
+            src="{{videoSrc}}"
+            controls
+        ></video>
+    </view>
+    <view class="buttonBox">
+        <button bindtap="selectLocal">选择本地视频</button>
+        <button bindtap='recordingVideo'>录制视频介绍</button>
+    </view>
+    <view class='ul clearfix'>
+    <view class='li' wx:for='{{imglist}}' data-index='{{index}}' bindtap="multipleTap" bindtouchstart="touchStart" bindtouchend="touchEnd" data-imgurl='{{item}}' wx:key="index">
+      <!-- <cover-image class='shutdown' bindtap='delImg' data-index='{{index}}' src='../../static/images/upimg/shutdown.png'></cover-image> -->
+      <image class='img' src='{{item}}'></image>
+    </view>
+    <view class='li addImg' bindtap='addImg'>
+      <image class='img' src='../../static/images/upimg/addimg.png'></image>
+      <text class='addCoverImg'>可添加视频封面</text>
+    </view>
+  </view>
+
+      <!-- 页脚 -->
+  <ctx-nextStep wx:if='{{isBtm}}' bindtap='saveVideo'>保存</ctx-nextStep>
+</view>

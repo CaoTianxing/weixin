@@ -1,0 +1,6 @@
+<view class='pageBox'>
+  <view class='editTest'>
+     <textarea bindblur="bindTextAreaBlur" placeholder="这里显示用户所写的，订单未完成的理由" />
+  </view>
+  <ctx-nextStep>订单申述</ctx-nextStep>
+</view>

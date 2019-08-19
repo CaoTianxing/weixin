@@ -1,0 +1,123 @@
+<ctx-navbar back home text="发布技能"></ctx-navbar>
+<view class='pageBox' style="{{'top:' + navigationBarHeight}}">
+  <view class='title bt1'>
+    <image src='{{initData.img}}'></image>
+    <text class='fl fs32 fc-5 ml30'>{{initData.title}}</text>
+    <text class='fr fs24 fc-bf mr30'>{{createTime}}  创建</text>
+  </view>
+  <view class='ul'>
+    <view class='li bt1'>
+      <navigator class='a' url='/pages/serviceMethod/serviceMethod' hover-class='none'>
+        <view class='li-l fl'>
+          <view class='fs32 fc-59'>服务方式</view>
+          <view class='fs26 fc-b3 mt20'>选择您的服务方式、价格、时间等</view>
+        </view>
+        <view class='li-r'>
+          <text class='fs28 li-r-subtitle'>去完善</text>
+          <van-icon color='#3775F5' name="arrow" />
+        </view>
+      </navigator>
+    </view>
+    <view class='li bt1'>
+      <navigator class='a' url='/pages/serviceHours/serviceHours' hover-class='none'>
+        <view class='li-l fl'>
+          <view class='fs32 fc-59'>服务时间</view>
+          <view class='fs26 fc-b3 mt20'>请选择您的服务时间</view>
+        </view>
+        <view class='li-r'>
+          <text class='fs28 li-r-subtitle'>去完善</text>
+          <van-icon color='#3775F5' name="arrow" />
+        </view>
+      </navigator>
+    </view>
+    <view class='li bt1'>
+      
+      <navigator url='/pages/editDemand/editDemand?key=goodAtInfo' hover-class='none'>
+        <view class='li-l fl'>
+          <view class='fs32 fc-59 clearfix'>
+            <text class='fs32 fc-59 fl'>擅长领域</text>
+            <view class='textLength mt5 ml10'>{{demandInfoNum}}/300</view>
+          </view>
+          <view class='fs26 fc-b3 mt20'>详细填写您的擅长领域有助于提高接单率哦</view>
+        </view>
+        <view class='li-r'>
+          <text class='fs28 li-r-subtitle'>已完善</text>
+          <van-icon color='#3775F5' name="arrow" />
+        </view>
+      </navigator>
+    </view>
+    <!-- 图片介绍 -->
+    <view class='li bt1'>
+      <navigator url='/pages/upServeImg/upServeImg' class='a' hover-class='none'>
+        <view class='li-l fl'>
+          <view class='fs32 fc-59'>
+            图片介绍
+            <text class='fc-bf fs32'>( 选填 )</text>
+          </view>
+          <view class='fs26 fc-b3 mt20'>上传您的照片或相关服务的照片</view>
+        </view>
+        <view class='li-r'>
+        <text class='fs28 li-r-subtitle'>去完善</text>
+          <!-- <text class='fs28 li-r-subtitle'>继续完善</text> -->
+          <van-icon color='#3775F5' name="arrow" />
+        </view>
+      </navigator>
+    </view>
+    <!-- 视频介绍 -->
+    <view class='li bt1'>
+      <navigator url='/pages/videoInfo/videoInfo' class='a' hover-class='none'>
+        <view class='li-l fl'>
+          <view class='fs32 fc-59'>
+            视频介绍
+            <text class='fc-bf fs32'>( 选填 )</text>
+          </view>
+          <view class='fs26 fc-b3 mt20'>录制视频介绍或您的服务</view>
+        </view>
+        <view class='li-r'>
+        <text class='fs28 li-r-subtitle'>去完善</text>
+          <!-- <text class='fs28 li-r-subtitle'>继续完善</text> -->
+          <van-icon color='#3775F5' name="arrow" />
+        </view>
+      </navigator>
+    </view>
+    <!-- 语音介绍 -->
+    <view class='li bt1'>
+      <navigator url='/pages/voiceInfo/voiceInfo' class='a' hover-class='none'>
+        <view class='li-l fl'>
+          <view class='fs32 fc-59'>
+            语音介绍
+            <text class='fc-bf fs32'>( 选填 )</text>
+          </view>
+          <view class='fs26 fc-b3 mt20'>录制60s语音介绍您的服务，可提高接单率</view>
+        </view>
+        <view class='li-r'>
+        <text class='fs28 li-r-subtitle'>去完善</text>
+          <!-- <text class='fs28 li-r-subtitle'>继续完善</text> -->
+          <van-icon color='#3775F5' name="arrow" />
+        </view>
+      </navigator>
+    </view>
+    <!-- 专业问答 -->
+    <view class='li bt1'>
+      <navigator url="/pages/questionAnswerList/questionAnswerList?id={{initData.id}}&title={{initData.title}}&img={{initData.img}}" class='a' hover-class='none'>
+        <view class='li-l fl'>
+          <view class='fs32 fc-59'>
+            专业问答
+            <text class='fc-bf fs32'>( 选填 )</text>
+          </view>
+          <view class='fs26 fc-b3 mt20'>添加与服务相关的问答</view>
+        </view>
+        <view class='li-r'>
+        <text class='fs28 li-r-subtitle'>去完善</text>
+          <!-- <text class='fs28 li-r-subtitle'>继续完善</text> -->
+          <van-icon color='#3775F5' name="arrow" />
+        </view>
+      </navigator>
+    </view>
+  </view>
+  <view class='checkbox'>
+  <van-checkbox value="{{ isSkillCircle }}" bind:change="onChange" checked-color='#6747CE'><text class='fs26'>同步到技能圈</text></van-checkbox>
+  </view>
+  
+  <ctx-nextStep bindtap='release'>发布技能</ctx-nextStep>
+</view>

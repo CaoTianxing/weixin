@@ -1,0 +1,24 @@
+<!-- server表示发布服务
+server表示发布赚钱 -->
+<ctx-navbar back home text="选择需求"></ctx-navbar>
+<view class='pageBox' style="{{'top:' + navigationBarHeight}}">
+  <view class='pageBoxIn'>
+    <view class='release'>
+      <view class='page-l'>
+        <navigator url='/pages/menu/menu?post=server' hover-class="none">
+          <image src='../../static/images/release/release-1.png'></image>
+          <view class='title'>需要服务</view>
+          <view class='subTitle'>一键发布秒接单</view>
+        </navigator>
+      </view>
+      <view class='page-r'>
+        <navigator url='/pages/menu/menu?post=demand' hover-class="none">
+          <image src='../../static/images/release/release-2.png'></image>
+          <view class='title'>我要赚钱</view>
+          <view class='subTitle'>技能高价值</view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>
+>

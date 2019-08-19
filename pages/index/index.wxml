@@ -1,0 +1,331 @@
+<ctx-navbar text="首页"></ctx-navbar>
+<view class='pageBox' style="{{'top:' + navigationBarHeight}}">
+    <!-- 轮播 -->
+    <view class='banner'>
+        <!-- 搜索以及位置模块 -->
+        <view class='search'>
+            <!-- 左边 -->
+            <view class='search-l fl fc' bindtap='getPosition'>
+                <image lazy-load src='../../static/images/index/index-1.png'></image>
+                <text bindtap='getPosition'>{{positionInfo}}</text>
+            </view>
+        </view>
+        <view class="bannerImg">
+            <image lazy-load src="http://116.62.168.126/jnzq/banner.png"></image>
+        </view>
+    </view>
+    <!-- 轮播end -->
+    <!-- nav start -->
+    <view class="nav clearfix">
+        <view>
+            <image src="http://116.62.168.126/jnzq/index-nav1.png"></image>
+            需求大厅
+        </view>
+        <view>
+            <image src="http://116.62.168.126/jnzq/index-nav2.png"></image>
+            服务大厅
+        </view>
+        <view>
+            <image src="http://116.62.168.126/jnzq/index-nav3.png"></image>
+            技能圈
+        </view>
+    </view>
+    <!-- nav end -->
+    <!-- 筛选 start -->
+    <view class='filtrate clearfix'>
+        <view class='filtrateLi' wx:for="{{filterList}}" wx:key="{{index}}">
+            <button bindtap="selected" data-index='{{index}}' hover-class="other-button-hover">
+                <text class="{{selected==index ? 'clor262626': 'clorBFBFBF'}}">{{item.name}}</text>
+                <text class="{{selected==index ? 'clor262626': 'clorBFBFBF'}} iconfont icon-xiajiantou xia" wx:if="{{item.icon}}"></text>
+            </button>
+        </view>
+    </view>
+    <!-- 筛选 end -->
+    <!-- 筛选结果列表 start -->
+    <!-- 001 智能排序 -->
+    <view class='filtrateResultList clearfix' wx:if="{{selected == 0}}">
+        <block wx:for="{{indexDataList}}" wx:key="{{index}}">
+            <navigator url='/pages/serveInfo/serveInfo?id={{item.id}}&userId={{item.userId}}' hover-class="none">
+                <view class='filtrateResultLi clearfix'>
+                    <view class='filtrateResultLi-t clearfix'>
+                        <image lazy-load class='userImg' src='{{item.headimg}}'></image>
+                        <text class="distance">{{item.distance}}km</text>
+                        <view class='userInfo'>
+                            <!-- 用户名 -->
+                            <view class='clearfix'>
+                                <view class="username fl mr10">{{item.nickname}}</view>
+                                <view class='userInfoIcon fl'>
+                                    <view class='sex'>
+                                        <image lazy-load wx:if="{{item.sex == '2'}}" src='../../static/images/index/index-12.png'></image>
+                                        <image lazy-load wx:if="{{item.sex == '1'}}" src='../../static/images/index/nan.png'></image>
+                                        <text>{{item.age}}</text>
+                                    </view>
+                                    <image lazy-load wx:if="{{item.moblieState == '1'}}" src='../../static/images/index/index-13.png'></image>
+                                    <image lazy-load wx:if="{{item.realnameState == '1'}}" src='../../static/images/index/index-14.png'></image>
+                                    <!-- <image lazy-load src='../../static/images/index/index-15.png'></image>
+                              <image lazy-load src='../../static/images/index/index-16.png'></image> -->
+                                </view>
+                            </view>
+                            <!-- 服务内容 -->
+                            <view class='ServeContent'>
+                                <!-- <image lazy-load src='../../static/images/index/index-17.png'></image> -->
+                                <text>{{item.skillName}}</text>
+                            </view>
+                            <!-- 服务简介 -->
+                            <view class='ServeInfo'>{{item.serviceIntroduction}}</view>
+                        </view>
+                    </view>
+                    <!-- 服务介绍图 -->
+                    <view class='filtrateResultLi-c clearfix'>
+                        <scroll-view scroll-x>
+                            <block wx:for="{{item.images}}" wx:key="{{index}}">
+                                <image lazy-load src='{{item}}'></image>
+                            </block>
+                        </scroll-view>
+                    </view>
+                    <view class='filtrateResultLi-b clearfix'>
+                        <image lazy-load src="../../static/images/index/index-19.png"></image>
+                        <text class="filtrateTxt">{{item.location}}</text>
+                        <button>
+                            <text>约TA</text>
+                            <image lazy-load src="../../static/images/index/index-18.png"></image>
+                        </button>
+                    </view>
+                </view>
+            </navigator>
+        </block>
+    </view>
+    <!-- 002 人气筛选 -->
+    <view class='filtrateResultList clearfix' wx:if="{{selected == 1}}">
+        <block wx:for="{{PopularityList}}" wx:key="{{index}}">
+            <navigator url='/pages/serveInfo/serveInfo' hover-class="none">
+                <view class='filtrateResultLi clearfix'>
+                    <view class='filtrateResultLi-t clearfix'>
+                        <image lazy-load class='userImg' src='{{item.headimg}}'></image>
+                        <text class="distance">{{item.distance}}km</text>
+                        <view class='userInfo'>
+                            <!-- 用户名 -->
+                            <view class='clearfix'>
+                                <view class="username fl mr10">{{item.nickname}}</view>
+                                <view class='userInfoIcon fl'>
+                                    <view class='sex'>
+                                        <image lazy-load wx:if="{{item.sex == '2'}}" src='../../static/images/index/index-12.png'></image>
+                                        <image lazy-load wx:if="{{item.sex == '1'}}" src='../../static/images/index/nan.png'></image>
+                                        <text>{{item.age}}</text>
+                                    </view>
+                                    <image lazy-load wx:if="{{item.moblieState == '1'}}" src='../../static/images/index/index-13.png'></image>
+                                    <image lazy-load wx:if="{{item.realnameState == '1'}}" src='../../static/images/index/index-14.png'></image>
+                                    <!-- <image lazy-load src='../../static/images/index/index-15.png'></image>
+                              <image lazy-load src='../../static/images/index/index-16.png'></image> -->
+                                </view>
+                            </view>
+                            <!-- 服务内容 -->
+                            <view class='ServeContent'>
+                                <!-- <image lazy-load src='../../static/images/index/index-17.png'></image> -->
+                                <text>{{item.skillName}}</text>
+                            </view>
+                            <!-- 服务简介 -->
+                            <view class='ServeInfo ellipsis'>{{item.serviceIntroduction}}</view>
+                        </view>
+                    </view>
+                    <!-- 服务介绍图 -->
+                    <view class='filtrateResultLi-c clearfix'>
+                        <scroll-view scroll-x>
+                            <block wx:for="{{item.images}}" wx:key="{{index}}">
+                                <image lazy-load src='{{item}}'></image>
+                            </block>
+                        </scroll-view>
+                    </view>
+                    <view class='filtrateResultLi-b clearfix'>
+                        <image lazy-load src="../../static/images/index/index-19.png"></image>
+                        <text class="filtrateTxt">{{item.location}}</text>
+                        <button>
+                            <text>约TA</text>
+                            <image lazy-load src="../../static/images/index/index-18.png"></image>
+                        </button>
+                    </view>
+                </view>
+            </navigator>
+        </block>
+    </view>
+    <!-- 003 距离筛选 -->
+    <view class='filtrateResultList clearfix' wx:if="{{selected == 2}}">
+        <block wx:for="{{distanceList}}" wx:key="{{index}}">
+            <navigator url='/pages/serveInfo/serveInfo' hover-class="none">
+                <view class='filtrateResultLi clearfix'>
+                    <view class='filtrateResultLi-t clearfix'>
+                        <image lazy-load class='userImg' src='{{item.headimg}}'></image>
+                        <text class="distance">{{item.distance}}km</text>
+                        <view class='userInfo'>
+                            <!-- 用户名 -->
+                            <view class='clearfix'>
+                                <view class="username fl mr10">{{item.nickname}}</view>
+                                <view class='userInfoIcon fl'>
+                                    <view class='sex'>
+                                        <image lazy-load wx:if="{{item.sex == '2'}}" src='../../static/images/index/index-12.png'></image>
+                                        <image lazy-load wx:if="{{item.sex == '1'}}" src='../../static/images/index/nan.png'></image>
+                                        <text>{{item.age}}</text>
+                                    </view>
+                                    <image lazy-load wx:if="{{item.moblieState == '1'}}" src='../../static/images/index/index-13.png'></image>
+                                    <image lazy-load wx:if="{{item.realnameState == '1'}}" src='../../static/images/index/index-14.png'></image>
+                                    <!-- <image lazy-load src='../../static/images/index/index-15.png'></image>
+                              <image lazy-load src='../../static/images/index/index-16.png'></image> -->
+                                </view>
+                            </view>
+                            <!-- 服务内容 -->
+                            <view class='ServeContent'>
+                                <!-- <image lazy-load src='../../static/images/index/index-17.png'></image> -->
+                                <text>{{item.skillName}}</text>
+                            </view>
+                            <!-- 服务简介 -->
+                            <view class='ServeInfo'>{{item.serviceIntroduction}}</view>
+                        </view>
+                    </view>
+                    <!-- 服务介绍图 -->
+                    <view class='filtrateResultLi-c clearfix'>
+                        <scroll-view scroll-x="true">
+                            <block wx:for="{{item.images}}" wx:key="{{index}}">
+                                <!-- <view class='scroll-x'> -->
+                                    <image wx:if="{{item != undefined}}" lazy-load src='{{item}}'></image>
+                                <!-- </view> -->
+                            </block>
+                        </scroll-view>
+                    </view>
+                    <view class='filtrateResultLi-b clearfix'>
+                        <image lazy-load src="../../static/images/index/index-19.png"></image>
+                        <text class="filtrateTxt">{{item.location}}</text>
+                        <button>
+                            <text>约TA</text>
+                            <image lazy-load src="../../static/images/index/index-18.png"></image>
+                        </button>
+                    </view>
+                </view>
+            </navigator>
+        </block>
+    </view>
+    <!-- 004 advancedfilter -->
+    <view class='filtrateResultList clearfix' wx:if="{{selected == 3}}">
+        <block wx:for="{{advancedfilter}}" wx:key="{{index}}">
+            <navigator url='/pages/serveInfo/serveInfo' hover-class="none">
+                <view class='filtrateResultLi clearfix'>
+                    <view class='filtrateResultLi-t clearfix'>
+                        <image lazy-load class='userImg' src='{{item.headimg}}'></image>
+                        <text class="distance">{{item.distance}}km</text>
+                        <view class='userInfo'>
+                            <!-- 用户名 -->
+                            <view class='clearfix'>
+                                <view class="username fl mr10">{{item.nickname}}</view>
+                                <view class='userInfoIcon fl'>
+                                    <view class='sex'>
+                                        <image lazy-load wx:if="{{item.sex == '2'}}" src='../../static/images/index/index-12.png'></image>
+                                        <image lazy-load wx:if="{{item.sex == '1'}}" src='../../static/images/index/nan.png'></image>
+                                        <text>{{item.age}}</text>
+                                    </view>
+                                    <image lazy-load wx:if="{{item.moblieState == '1'}}" src='../../static/images/index/index-13.png'></image>
+                                    <image lazy-load wx:if="{{item.realnameState == '1'}}" src='../../static/images/index/index-14.png'></image>
+                                    <!-- <image lazy-load src='../../static/images/index/index-15.png'></image>
+                              <image lazy-load src='../../static/images/index/index-16.png'></image> -->
+                                </view>
+                            </view>
+                            <!-- 服务内容 -->
+                            <view class='ServeContent'>
+                                <!-- <image lazy-load src='../../static/images/index/index-17.png'></image> -->
+                                <text>{{item.skillName}}</text>
+                            </view>
+                            <!-- 服务简介 -->
+                            <view class='ServeInfo'>{{item.serviceIntroduction}}</view>
+                        </view>
+                    </view>
+                    <!-- 服务介绍图 -->
+                    <view class='filtrateResultLi-c clearfix'>
+                        <scroll-view scroll-x>
+                            <block wx:for="{{item.images}}" wx:key="{{index}}">
+                                <image lazy-load src='{{item}}'></image>
+                            </block>
+                        </scroll-view>
+                    </view>
+                    <view class='filtrateResultLi-b clearfix'>
+                        <image lazy-load src="../../static/images/index/index-19.png"></image>
+                        <text class="filtrateTxt">{{item.location}}</text>
+                        <button>
+                            <text>约TA</text>
+                            <image lazy-load src="../../static/images/index/index-18.png"></image>
+                        </button>
+                    </view>
+                </view>
+            </navigator>
+        </block>
+    </view>
+    <!-- 筛选结果列表 end -->
+</view>
+<!-- 筛选菜单 -->
+<view class="animation-element" animation="{{animation}}" style="{{'top:' + navigationBarHeight}}">
+    <view class='menuTop'>
+        <image src='http://116.62.168.126/jnzq/saisuan.png' />
+        <text>筛选</text>
+        <view class='menu-hr'></view>
+        <view class='genderTitle'>性别</view>
+        <view class='genderList'>
+            <block wx:for="{{gender}}" wx:key="{{index}}">
+                <view bindtap='addClass' data-index='{{item.index}}' data-name='gender' class="genderLi {{item.active ? 'genderLiAct' : ''}}" index-id="{{item.id}}">
+                    {{item.name}}
+                </view>
+            </block>
+        </view>
+    </view>
+    <view class='menu-content-list'>
+        <view class='menu-content-list-li'>
+            <view class='genderTitle'>年龄</view>
+            <view class='genderList'>
+                <block wx:for="{{age}}" wx:key="{{index}}">
+                    <view bindtap='addClass' data-index='{{item.index}}' data-name='age' class="genderLi {{item.active ? 'genderLiAct' : ''}}" index-id="{{item.id}}">
+                        {{item.name}}
+                    </view>
+                </block>
+            </view>
+        </view>
+    </view>
+    <view class='menu-content-list'>
+        <view class='menu-content-list-li'>
+            <view class='genderTitle'>实名认证</view>
+            <view class='genderList'>
+                <block wx:for="{{realName}}" wx:key="{{index}}">
+                    <view bindtap='addClass' data-index='{{item.index}}' data-name='realName' class="genderLi {{item.active ? 'genderLiAct' : ''}}" index-id="{{item.id}}">
+                        {{item.name}}
+                    </view>
+                </block>
+            </view>
+        </view>
+    </view>
+    <view class='menu-content-list'>
+        <view class='menu-content-list-li'>
+            <view class='genderTitle'>服务方式</view>
+            <view class='genderList'>
+                <block wx:for="{{serveManner}}" wx:key="{{index}}">
+                    <view bindtap='addClass' data-index='{{item.index}}' data-name='serveManner' class="genderLi {{item.active ? 'genderLiAct' : ''}}" index-id="{{item.id}}">
+                        {{item.name}}
+                    </view>
+                </block>
+            </view>
+        </view>
+    </view>
+    <view class='menu-content-list'>
+        <view class='menu-content-list-li'>
+            <view class='genderTitle'>距离</view>
+            <view class='genderList'>
+                <block wx:for="{{distance}}" wx:key="{{index}}">
+                    <view bindtap='addClass' data-index='{{item.index}}' data-name='distance' class="genderLi {{item.active ? 'genderLiAct' : ''}}" index-id="{{item.id}}">
+                        {{item.name}}
+                    </view>
+                </block>
+            </view>
+        </view>
+    </view>
+    <view class='btn'>
+        <view bindtap='endAnima' class='firstBtn'>取消</view>
+        <view bindtap='startFilter' class='lastBtn'>确定</view>
+    </view>
+</view>
+<view class='mask' wx:if='{{mask}}' bindtap='endAnima'></view>
+<!-- 底部导航 -->
+<ctx-tabBar />

@@ -1,0 +1,3 @@
+<cover-view class='nextStep'>
+  <slot></slot>
+</cover-view>
